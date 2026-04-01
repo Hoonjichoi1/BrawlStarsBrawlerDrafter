@@ -1,0 +1,272 @@
+{
+  "Bibi": {
+    "effective_range": "close",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": false,
+    "range": 3.7,
+    "type": "tank",
+    "assassin_skill": false
+  },
+  "Mortis": {
+    "effective_range": "close",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": false,
+    "range": 2.7,
+    "type": "assassin",
+    "assassin_skill": true
+  },
+  "Bull": {
+    "effective_range": "close",
+    "thrower": false,
+    "wall_break": true,
+    "attack_over_wall": false,
+    "range": 5.3,
+    "type": "tank",
+    "assassin_skill": false
+  },
+  "Rico": {
+    "effective_range": "long",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": false,
+    "range": 9.7,
+    "type": "damage_dealer",
+    "assassin_skill": false
+  },
+  "Sirius": {
+    "effective_range": "mid",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": false,
+    "range": 7.3,
+    "type": "controller",
+    "assassin_skill": false
+  },
+  "Crow": {
+    "effective_range": "mid",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": false,
+    "range": 8.7,
+    "type": "assassin",
+    "assassin_skill": true
+  },
+  "Colt": {
+    "effective_range": "long",
+    "thrower": false,
+    "wall_break": true,
+    "attack_over_wall": false,
+    "range": 9,
+    "type": "damage_dealer",
+    "assassin_skill": false
+  },
+  "Spike": {
+    "effective_range": "mid",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": true,
+    "range": 7.7,
+    "type": "damage_dealer",
+    "assassin_skill": false
+  },
+  "Leon": {
+    "effective_range": "close",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": false,
+    "range": 9.7,
+    "type": "assassin",
+    "assassin_skill": true
+  },
+  "Emz": {
+    "effective_range": "mid",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": true,
+    "range": 6.7,
+    "type": "damage_dealer",
+    "assassin_skill": false
+  },
+  "Mandy": {
+    "effective_range": "long",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": true,
+    "range": 9,
+    "type": "sniper",
+    "assassin_skill": false
+  },
+  "Piper": {
+    "effective_range": "long",
+    "thrower": false,
+    "wall_break": true,
+    "attack_over_wall": false,
+    "range": 10,
+    "type": "sniper",
+    "assassin_skill": false
+  },
+  "Bea": {
+    "effective_range": "long",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": true,
+    "range": 10,
+    "type": "sniper",
+    "assassin_skill": false
+  },
+  "Najia": {
+    "effective_range": "mid",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": false,
+    "range": 5.3,
+    "type": "damage_dealer",
+    "assassin_skill": false
+  },
+  "Bo": {
+    "effective_range": "mid",
+    "thrower": false,
+    "wall_break": true,
+    "attack_over_wall": false,
+    "range": 8.7,
+    "type": "controller",
+    "assassin_skill": false
+  },
+  "Fang": {
+    "effective_range": "close",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": false,
+    "range": 9.33,
+    "type": "assassin",
+    "assassin_skill": true
+  },
+  "Byron": {
+    "effective_range": "long",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": true,
+    "range": 10,
+    "type": "support",
+    "assassin_skill": false
+  },
+  "Brock": {
+    "effective_range": "long",
+    "thrower": false,
+    "wall_break": true,
+    "attack_over_wall": true,
+    "range": 9,
+    "type": "damage_dealer",
+    "assassin_skill": false
+  },
+  "Pierce": {
+    "effective_range": "long",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": true,
+    "range": 10,
+    "type": "damage_dealer",
+    "assassin_skill": false
+  },
+  "Chester": {
+    "effective_range": "mid",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": true,
+    "range": 8.3,
+    "type": "damage_dealer",
+    "assassin_skill": false
+  },
+  "Shelly": {
+    "effective_range": "close",
+    "thrower": false,
+    "wall_break": true,
+    "attack_over_wall": false,
+    "range": 7.7,
+    "type": "damage_dealer",
+    "assassin_skill": false
+  },
+  "Cordellus": {
+    "effective_range": "mid",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": false,
+    "range": 5.3,
+    "type": "assassin",
+    "assassin_skill": true
+  },
+  "Edgar": {
+    "effective_range": "close",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": false,
+    "range": 2,
+    "type": "assassin",
+    "assassin_skill": true
+  },
+  "Tick": {
+    "effective_range": "mid",
+    "thrower": true,
+    "wall_break": false,
+    "attack_over_wall": true,
+    "range": 8.7,
+    "type": "artillery",
+    "assassin_skill": false
+  },
+  "Dynamike": {
+    "effective_range": "mid",
+    "thrower": true,
+    "wall_break": true,
+    "attack_over_wall": true,
+    "range": 7.3,
+    "type": "artillery",
+    "assassin_skill": false
+  },
+  "Surge": {
+    "effective_range": "mid",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": false,
+    "range": 6.7,
+    "type": "damage_dealer",
+    "assassin_skill": false
+  },
+  "Frank": {
+    "effective_range": "mid",
+    "thrower": false,
+    "wall_break": true,
+    "attack_over_wall": false,
+    "range": 6,
+    "type": "tank",
+    "assassin_skill": false
+  },
+  "Buzz": {
+    "effective_range": "close",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": false,
+    "range": 2.7,
+    "type": "assassin",
+    "assassin_skill": true
+  },
+  "Stu": {
+    "effective_range": "mid",
+    "thrower": false,
+    "wall_break": true,
+    "attack_over_wall": false,
+    "range": 7.7,
+    "type": "assassin",
+    "assassin_skill": false
+  },
+  "Kit": {
+    "effective_range": "close",
+    "thrower": false,
+    "wall_break": false,
+    "attack_over_wall": false,
+    "range": 3.7,
+    "type": "support",
+    "assassin_skill": true
+  }
+}

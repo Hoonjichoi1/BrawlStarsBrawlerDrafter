@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <pre id="result"></pre>
+
+    <script>
+        const maps = {
+            Heist: ['BridgeTooFar', 'HotPotato', 'KaboomCanyon', 'SageZone'],
+            KnockOut: ['BellsRock', 'FlaringPhoenix', 'NewHorizons', 'OutintheOpen'],
+            Bounty: ['DrySeason', 'Hideout', 'LayerCake', 'ShootingStar'],
+            HotZone: ['DuelingBeetles', 'OpenBusiness', 'ParallelPlays', 'RingofFire'],
+            BrawlBall: ['BeachBall', 'CenterStage', 'PinballDreams', 'SneakyFields', 'SpiralingOut', 'TripleDribble'],
+            GemGrab: ['DoubleSwoosh', 'GemFort', 'HardRockMine', 'Undermine']
+        };
+
+        function analyzeImage(src) {
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.src = src;
+                img.onload = () => {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0);
+
+                    const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+                    let counts = { floor: 0, bush: 0, wall_soft: 0, wall_hard: 0, water: 0, wall_stadium: 0, other: 0 };
+                    const total = data.length / 4;
+
+                    for (let i = 0; i < data.length; i += 4) {
+                        const r = data[i], g = data[i + 1], b = data[i + 2];
+                        if (r < 50 && g < 50 && b < 50) counts.floor++;
+                        else if (g > 100 && r < 100 && b < 100) counts.bush++;
+                        else if (r > 150 && g < 80 && b < 80) counts.wall_soft++;
+                        else if (r > 200 && g > 200 && b < 50) counts.wall_hard++;
+                        else if (r < 50 && g > 100 && b > 150) counts.water++;
+                        else if (r > 140 && r < 190 && g > 140 && g < 190 && b > 140 && b < 190) counts.wall_stadium++;
+                        else counts.other++;
+                    }
+
+                    const result = {};
+                    for (const key in counts) {
+                        result[key] = parseFloat(((counts[key] / total) * 100).toFixed(1));
+                    }
+                    resolve(result);
+                };
+            });
+        }
+
+        async function analyzeAll() {
+            const output = {};
+            for (const [mode, mapList] of Object.entries(maps)) {
+                output[mode] = {};
+                for (const mapName of mapList) {
+                    const src = `./${mode}/${mapName}.png`;
+                    output[mode][mapName] = await analyzeImage(src);
+                }
+            }
+            document.getElementById('result').textContent = JSON.stringify(output, null, 2);
+        }
+
+        analyzeAll();
+    </script>
+</body>
+
+</html>
