@@ -11,14 +11,14 @@ Object.entries(mapData).forEach(([mode, maps]) => {
 
         if (stats.bush > 19) {
             tags.push("bush_high");
-        } else if (walls_total > 10) { // bush 19 이상일 때 wall 간섭은 향후에 보고 조정
-            if (19 > stats.bush && stats.bush > 8) {
+        } else if (walls_total > 10) {
+            if (stats.bush > 8) {
                 tags.push("wall_high", "bush_medium");
             } else {
                 tags.push("wall_high", "bush_low");
             }
         } else {
-            if (19 > stats.bush && stats.bush > 12) {
+            if (stats.bush > 12) {
                 tags.push("wall_low", "bush_medium");
             } else {
                 tags.push("wall_low", "bush_low");
@@ -33,23 +33,55 @@ function classifyMap(map) {
     return foundMap ? foundMap.tags : [];
 }
 
+const modeWeights = {
+    GemGrab:  { tank: 2, assassin: 1.5, controller: 1.5, support: 1.5 },
+    Heist:    { damage_dealer: 1.5, artillery: 2 },
+    HotZone:  { tank: 2 },
+    BrawlBall:{ tank: 2, assassin: 2 },
+    Bounty:   {},
+    KnockOut: {}
+};
+
+const modeBonuses = {
+    Heist:    (stats) => stats.assassin_skill ? 0.5 : 0,
+    BrawlBall:(stats) => stats.wall_break ? 0.5 : 0,
+};
+
+// map = object, mode = string
 export function recommendBrawler(map) {
     const tags = classifyMap(map);
-    const brawlers = Object.entries(brawlerData);
+    const mode = map.mode;
+    const weights = modeWeights[mode] || {};         // select mode weights
+    const bonus = modeBonuses[mode] || (() => 0);  // select mode bonuses
 
-    if (tags.includes("bush_high")) {
-        return brawlers.filter(([name, stats]) => stats.effective_range === "close");
-    } else if (tags.includes("wall_high")) {
-        if (tags.includes("bush_medium")) {
-            return brawlers.filter(([name, stats]) => stats.effective_range === "mid" || stats.thrower);
+    const scored = Object.entries(brawlerData).map(([name, stats]) => {
+        let score = 0;
+
+        score += weights[stats.type] || 0;  // find type weight
+        score += bonus(stats);              // find type bonus
+
+        // find terrain score
+        if (tags.includes("bush_high")) {
+            if (stats.effective_range === "close") score += 2;
+        } else if (tags.includes("wall_high")) {
+            if (tags.includes("bush_medium")) {
+                if (stats.effective_range === "mid" || stats.thrower) score += 2;
+            } else {
+                if (stats.effective_range !== "close") score += 2;
+            }
         } else {
-            return brawlers.filter(([name, stats]) => stats.effective_range !== "close");
+            if (tags.includes("bush_medium")) {
+                if (stats.thrower || stats.effective_range === "long") score += 2;
+            } else {
+                if (stats.effective_range === "long") score += 2;
+            }
         }
-    } else {
-        if (tags.includes("bush_medium")) {
-            return brawlers.filter(([name, stats]) => stats.thrower || stats.effective_range === "long");
-        } else {
-            return brawlers.filter(([name, stats]) => stats.effective_range === "long");
-        }
-    }
+
+        return [name, stats, score];
+    });
+
+    return scored
+        .sort((a, b) => b[2] - a[2])
+        .slice(0, 5)
+        .map(([name, stats]) => ({ name, ...stats }));
 }

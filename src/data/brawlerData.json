@@ -24,7 +24,7 @@
     "attack_over_wall": false,
     "range": 5.3,
     "type": "tank",
-    "assassin_skill": false
+    "assassin_skill": true
   },
   "Rico": {
     "effective_range": "long",
