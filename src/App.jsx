@@ -3,43 +3,32 @@ import { recommendBrawler } from './util/recommend.js';
 import { BrawlerList } from './components/BrawlerList.jsx';
 import { MapSelect } from './components/MapSelect.jsx';
 import { ModeSelector } from './components/ModeSelector.jsx';
-import { useState, useEffect } from 'react';
-import mapData from './data/mapData.json';
+import { useState } from 'react';
 
 function App() {
-    const [selectedMap, setSelectedMap] = useState(null);
+    const [selectedMap, setSelectedMap] = useState("");
     const [selectedMode, setSelectedMode] = useState("");
-    const [maps, setMaps] = useState([]);
+    const brawlerForMap = () => recommendBrawler({ mode: selectedMode, name: selectedMap[0] });
+    const recommendedBrawler = selectedMap ? brawlerForMap() : [];
 
     const onModeChange = (mode) => {
         setSelectedMode(mode);
     }
 
-    useEffect(() => {
-        const fetchMaps = async () => {
-            const res = await fetch("https://api.brawlify.com/v1/maps");
-            const data = await res.json();
-
-            const validId = Object.values(mapData).flatMap(maps => Object.values(maps)).map(m => m.id);
-            const filteredData = data.list.filter((item) => validId.includes(item.id));
-
-            setMaps(filteredData);
-            console.log("Fetched maps:", filteredData);
-        }
-        fetchMaps();
-    }, []);
+    const onMapChange = (map) => {
+        setSelectedMap(map);
+    }
 
     return (
         <>
             <ModeSelector
                 onModeChange={onModeChange}
-                selectedMode={selectedMode}>
-            </ModeSelector>
+                selectedMode={selectedMode}/>
             <MapSelect
                 selectedMode={selectedMode}
-                maps={maps}>
-            </MapSelect>
-            <BrawlerList></BrawlerList>
+                onMapChange={onMapChange}/>
+            <BrawlerList 
+                recommendedBrawler={recommendedBrawler}/>
         </>
     )
 }
