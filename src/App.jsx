@@ -20,7 +20,6 @@ function App() {
 
     const onMapChange = (map) => {
         setSelectedMap(map);
-        console.log("Selected Map:", map);
     }
 
     return (
@@ -31,7 +30,8 @@ function App() {
                 selectedMode={selectedMode} />
             <MapSelect
                 selectedMode={selectedMode}
-                onMapChange={onMapChange} />
+                onMapChange={onMapChange} 
+                selectedMap={selectedMap} />
             <BrawlerList
                 recommendedBrawler={recommendedBrawler} />
         </>

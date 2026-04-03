@@ -28,7 +28,7 @@ Object.entries(mapData).forEach(([mode, maps]) => {
     });
 })
 
-function classifyMap(map) {
+export function classifyMap(map) {
     const foundMap = taggedMaps.find(m => m.mapName === map.name && m.mode === map.mode);
     return foundMap ? foundMap.tags : [];
 }

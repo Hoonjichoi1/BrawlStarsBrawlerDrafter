@@ -1,7 +1,13 @@
 .MapSelect {
     display: flex;
+    flex-direction: column;
     gap: 10px;
     margin-bottom: 28px;
+}
+
+.Map-list {
+    display: flex;
+    gap: 10px;
 }
 
 .map-image {
@@ -31,4 +37,25 @@
     font-weight: 600;
     text-align: center;
     padding-top: 4px;
+}
+
+
+.Map-analysis {
+    background: var(--background-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 12px;
+    line-height: 1.4;
+}
+
+.Map-analysis h3 {
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+
+.Map-analysis p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--text-primary);
 }
