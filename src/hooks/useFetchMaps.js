@@ -13,7 +13,6 @@ export const useFetchMaps = () => {
             const filteredData = data.list.filter((item) => validId.includes(item.id));
 
             setMaps(filteredData);
-            console.log("Fetched maps:", filteredData);
         }
         fetchMaps();
     }, []);

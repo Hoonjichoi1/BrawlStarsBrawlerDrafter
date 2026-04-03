@@ -12,6 +12,9 @@ function App() {
     const recommendedBrawler = selectedMap ? brawlerForMap() : [];
 
     const onModeChange = (mode) => {
+        if (mode !== selectedMode) {
+            setSelectedMap("")
+        }
         setSelectedMode(mode);
     }
 
@@ -21,14 +24,15 @@ function App() {
 
     return (
         <>
+            <h1>Brawl Picker</h1>
             <ModeSelector
                 onModeChange={onModeChange}
-                selectedMode={selectedMode}/>
+                selectedMode={selectedMode} />
             <MapSelect
                 selectedMode={selectedMode}
-                onMapChange={onMapChange}/>
-            <BrawlerList 
-                recommendedBrawler={recommendedBrawler}/>
+                onMapChange={onMapChange} />
+            <BrawlerList
+                recommendedBrawler={recommendedBrawler} />
         </>
     )
 }

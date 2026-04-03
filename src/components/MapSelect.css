@@ -1,0 +1,23 @@
+.MapSelect {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.map-image {
+    width: 100%;
+    border-radius: 10px;
+    border: 1.5px solid var(--border-default);
+    cursor: pointer;
+    transition: all 0.15s;
+    display: block;
+}
+
+.map-image:hover {
+    border-color: var(--accent-orange);
+}
+
+.map-image.selected {
+    border-color: var(--accent-green);
+}

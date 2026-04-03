@@ -1,0 +1,38 @@
+.instruction {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.mode-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+.mode-button {
+    background: var(--bg-card);
+    border: 1.5px solid var(--border-default);
+    border-radius: 10px;
+    padding: 10px 18px;
+    color: var(--text-secondary);
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.mode-button:hover {
+    border-color: var(--accent-orange);
+    color: var(--accent-orange);
+}
+
+.mode-button.active {
+    background: var(--accent-green-bg);
+    border-color: var(--accent-green);
+    color: var(--accent-green);
+}
