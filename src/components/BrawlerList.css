@@ -1,4 +1,10 @@
 .BrawlerList {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.brawler-cards {
+    display: flex;
     gap: 10px;
 }

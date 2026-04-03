@@ -55,7 +55,13 @@
 }
 
 .Map-analysis p {
-    margin: 0;
+    margin-left: 8px;
     font-size: 16px;
     color: var(--text-primary);
+}
+
+.map-tags {
+    margin-left: 8px;
+    font-size: 16px;
+    color: var(--text-muted);
 }

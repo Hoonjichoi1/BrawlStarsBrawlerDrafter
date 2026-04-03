@@ -21,7 +21,7 @@ Object.entries(mapData).forEach(([mode, maps]) => {
             if (map.bush > 12) {
                 tags.push("wall_low", "bush_medium");
             } else {
-                tags.push("wall_low", "bush_low");
+                tags.push("wall_low", "bush_low", "open");
             }
         }
         taggedMaps.push({ mode, mapName, tags }); // String String Array

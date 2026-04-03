@@ -1,7 +1,5 @@
 .BrawlerCard {
     width: 100%;
-    max-height: 200px;
-    max-width: fit-content;
     background: var(--bg-card);
     border: 1.5px solid var(--border-default);
     border-radius: 10px;
@@ -25,4 +23,24 @@
     color: var(--text-primary);
     font-weight: 600;
     text-align: center;
+}
+
+.brawler-stat {
+    font-size: 15px;
+    color: var(--text-primary);
+    font-weight: 100;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.brawler-stat .brawler-range.long {
+    color: #f87171;
+}
+
+.brawler-stat .brawler-range.medium {
+    color: var(--accent-orange);
+}
+
+.brawler-stat .brawler-range.short {
+    color: var(--accent-green);
 }

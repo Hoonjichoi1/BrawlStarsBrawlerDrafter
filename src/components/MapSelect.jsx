@@ -4,6 +4,15 @@ import { useFetchMaps } from '../hooks/useFetchMaps.js';
 import { useState } from 'react';
 import { classifyMap } from "../util/recommend.js";
 
+const MODES = [
+    { value: "GemGrab", strategy: "Gem Grab" },
+    { value: "Heist", strategy: "Heist" },
+    { value: "BrawlBall", strategy: "Brawl Ball" },
+    { value: "Bounty", strategy: "Bounty" },
+    { value: "KnockOut", strategy: "Knock Out" },
+    { value: "HotZone", strategy: "Hot Zone" },
+];
+
 export const MapSelect = ({ selectedMode, onMapChange, selectedMap }) => {
     const apiMaps = useFetchMaps();
     const modeMaps = mapData[selectedMode] || []; // from my data
@@ -33,16 +42,16 @@ export const MapSelect = ({ selectedMode, onMapChange, selectedMap }) => {
                     </div>
                 ))}
             </div>
-            <div className="Map-analysis">
-                {selectedMap &&
-                    <div>
-                        <h3>Map analysis of "{`${selectedMap.name}`}"</h3>
-                            🏷️ {selectedTags && selectedTags.map(tag => "#" + `${tag}` + " ")}
-                        <p> 🌱 Bush Coverage: {(selectedMap.bush / 693 * 100).toFixed(1)}% = {selectedMap.bush} units out of 693 units</p>
-                        <p> 🪨 Wall Coverage: {(selectedMap.wall_hard + selectedMap.wall_soft / 693 * 100).toFixed(1)}% = {(selectedMap.wall_hard + selectedMap.wall_soft).toFixed(1)} units out of 693 units</p>
-                    </div>
-                }
-            </div>
+            {selectedMap &&
+                <div className="Map-analysis">
+                    <h3>Map analysis of "{`${selectedMap.name}`}"</h3>
+                    <div className="map-tags"> {selectedTags && selectedTags.map(tag => "#" + `${tag}` + " ")} </div>
+                    <p> 🎮 Game Mode : {selectedMap.mode} ⇨ {MODES.find(m => m.value === selectedMap.mode)?.strategy}</p>
+                    <p> 🌱 Bush Coverage: {(selectedMap.bush / 693 * 100).toFixed(1)}% = {selectedMap.bush} units out of 693 units</p>
+                    <p> 🪨 Wall Coverage: {(selectedMap.wall_hard + selectedMap.wall_soft / 693 * 100).toFixed(1)}% = {(selectedMap.wall_hard + selectedMap.wall_soft).toFixed(1)} units out of 693 units</p>
+                    <p> 💧 Water Coverage: {(selectedMap.water / 693 * 100).toFixed(1)}% = {selectedMap.water} units out of 693 units</p>
+                </div>
+            }
         </div>
     )
 }

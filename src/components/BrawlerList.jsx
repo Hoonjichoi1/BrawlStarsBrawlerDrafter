@@ -8,10 +8,17 @@ export const BrawlerList = ({ recommendedBrawler }) => {
     const filteredBrawlers = Object.values(apiBrawlers).filter((b) => validIds.includes(b.id));
 
     return (
-        <div className="BrawlerList">
-            {filteredBrawlers.map((brawler) =>
-                <BrawlerCard key={brawler.id} brawler={brawler}/>
-            )}
+        <div>
+            {recommendedBrawler &&
+                <div className="BrawlerList">
+                    <p className="instruction">RECOMMENDED BRAWLERS</p>
+                    <div className="brawler-cards">
+                        {filteredBrawlers.map((brawler) =>
+                            <BrawlerCard key={brawler.id} brawler={brawler} />
+                        )}
+                    </div>
+                </div>
+            }
         </div>
     )
 }

@@ -176,7 +176,7 @@
         "wall_break": true,
         "attack_over_wall": true,
         "range": 9,
-        "type": "damage_dealer",
+        "type": "Marksman",
         "assassin_skill": false
     },
     "Pierce": {
@@ -260,7 +260,7 @@
         "assassin_skill": false
     },
     "Frank": {
-        "id": 16000036,
+        "id": 16000020,
         "effective_range": "mid",
         "thrower": false,
         "wall_break": true,
