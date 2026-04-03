@@ -5,29 +5,34 @@ import { useState } from 'react';
 
 export const MapSelect = ({ selectedMode, onMapChange }) => {
     const apiMaps = useFetchMaps();
-    const modeMaps = mapData[selectedMode] || {}; // from my data
-    const modeMapIds = Object.values(modeMaps).map(m => m.id);
+    const modeMaps = mapData[selectedMode] || []; // from my data
+    const modeMapIds = modeMaps.map(m => m.id);
     const filteredMaps = apiMaps.filter(map => modeMapIds.includes(map.id)); // from api data for map images
     const [selected, setSelected] = useState(null);
 
 
     const handleMapSelect = (id) => {
-        onMapChange(Object.entries(modeMaps).find(([name, map]) => map.id === id ? { name: map } : null));
+        onMapChange(modeMaps.find(map => map.id === id));
         setSelected(id);
     }
+
 
     return (
         <div className='MapSelect'>
             {filteredMaps.map((item) => (
-                <div>
+                <div key={item.id}>
                     <img className={`map-image ${selected === item.id ? "selected" : ""}`}
                         onClick={() => handleMapSelect(item.id)}
-                        key={item.id}
                         src={item.imageUrl}
                         alt={item.name} />
-                        <div className="map-name"> {item.name} </div>
+                    <div className="map-name"> {item.name} </div>
                 </div>
             ))}
+            <div className="map-analysis">
+                Map Analysis
+                {/* {` ${selectedMap.name}`} */}
+
+            </div>
         </div>
     )
 }

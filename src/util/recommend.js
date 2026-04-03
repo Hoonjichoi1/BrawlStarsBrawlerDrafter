@@ -3,30 +3,30 @@ import brawlerData from '../data/brawlerData.json';
 
 
 const taggedMaps = [];
-
 Object.entries(mapData).forEach(([mode, maps]) => {
-    Object.entries(maps).forEach(([mapName, stats]) => {
+    maps.forEach((map) => {
         const tags = [];
-        const walls_total = stats.wall_soft + stats.wall_hard;
+        const mapName = map.name
+        const walls_total = map.wall_soft + map.wall_hard;
 
-        if (stats.bush > 19) {
+        if (map.bush > 19) {
             tags.push("bush_high");
         } else if (walls_total > 10) {
-            if (stats.bush > 8) {
+            if (map.bush > 8) {
                 tags.push("wall_high", "bush_medium");
             } else {
                 tags.push("wall_high", "bush_low");
             }
         } else {
-            if (stats.bush > 12) {
+            if (map.bush > 12) {
                 tags.push("wall_low", "bush_medium");
             } else {
                 tags.push("wall_low", "bush_low");
             }
         }
-        taggedMaps.push({ mode, mapName, tags });
+        taggedMaps.push({ mode, mapName, tags }); // String String Array
     });
-});
+})
 
 function classifyMap(map) {
     const foundMap = taggedMaps.find(m => m.mapName === map.name && m.mode === map.mode);
@@ -34,17 +34,17 @@ function classifyMap(map) {
 }
 
 const modeWeights = {
-    GemGrab:  { tank: 2, assassin: 1.5, controller: 1.5, support: 1.5 },
-    Heist:    { damage_dealer: 1.5, artillery: 2 },
-    HotZone:  { tank: 2 },
-    BrawlBall:{ tank: 2, assassin: 2 },
-    Bounty:   {},
+    GemGrab: { tank: 2, assassin: 1.5, controller: 1.5, support: 1.5 },
+    Heist: { damage_dealer: 1.5, artillery: 2 },
+    HotZone: { tank: 2 },
+    BrawlBall: { tank: 2, assassin: 2 },
+    Bounty: {},
     KnockOut: {}
 };
 
 const modeBonuses = {
-    Heist:    (stats) => stats.assassin_skill ? 0.5 : 0,
-    BrawlBall:(stats) => stats.wall_break ? 0.5 : 0,
+    Heist: (stats) => stats.assassin_skill ? 0.5 : 0,
+    BrawlBall: (stats) => stats.wall_break ? 0.5 : 0,
 };
 
 // map = object, mode = string
@@ -79,7 +79,6 @@ export function recommendBrawler(map) {
 
         return [name, stats, score];
     });
-
     return scored
         .sort((a, b) => b[2] - a[2])
         .slice(0, 5)

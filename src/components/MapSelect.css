@@ -1,12 +1,13 @@
 .MapSelect {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     gap: 10px;
     margin-bottom: 28px;
 }
 
 .map-image {
     width: 100%;
+    max-height: 500px;
+    max-width: fit-content;
     border-radius: 10px;
     border: 1.5px solid var(--border-default);
     cursor: pointer;

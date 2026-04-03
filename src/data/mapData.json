@@ -1,6 +1,7 @@
 {
-    "Heist": {
-        "BridgeTooFar": {
+    "Heist": [
+        {
+            "name": "BridgeTooFar",
             "id": 15000072,
             "floor": 66.6,
             "bush": 12,
@@ -9,8 +10,8 @@
             "water": 18,
             "wall_stadium": 0,
             "other": 0.6
-        },
-        "HotPotato": {
+        }, {
+            "name": "HotPotato",
             "id": 15000053,
             "floor": 67.6,
             "bush": 18.3,
@@ -19,8 +20,8 @@
             "water": 0,
             "wall_stadium": 0,
             "other": 0.4
-        },
-        "KaboomCanyon": {
+        }, {
+            "name": "KaboomCanyon",
             "id": 15000018,
             "floor": 69.7,
             "bush": 15.5,
@@ -29,8 +30,8 @@
             "water": 4.6,
             "wall_stadium": 0,
             "other": 0.5
-        },
-        "SafeZone": {
+        }, {
+            "name": "SafeZone",
             "id": 15000019,
             "floor": 72.4,
             "bush": 12.6,
@@ -40,9 +41,10 @@
             "wall_stadium": 0,
             "other": 0
         }
-    },
-    "KnockOut": {
-        "Belle'sRock": {
+    ],
+    "KnockOut": [
+        {
+            "name": "Belle'sRock",
             "id": 15000368,
             "floor": 79.4,
             "bush": 6,
@@ -52,7 +54,8 @@
             "wall_stadium": 0,
             "other": 0.2
         },
-        "FlaringPhoenix": {
+        {
+            "name": "FlaringPhoenix",
             "id": 15000440,
             "floor": 73.4,
             "bush": 16.2,
@@ -62,7 +65,8 @@
             "wall_stadium": 0,
             "other": 0
         },
-        "NewHorizons": {
+        {
+            "name": "NewHorizons",
             "id": 15000703,
             "floor": 78.5,
             "bush": 7.6,
@@ -72,7 +76,8 @@
             "wall_stadium": 0,
             "other": 0.2
         },
-        "OutintheOpen": {
+        {
+            "name": "OutintheOpen",
             "id": 15000548,
             "floor": 79.4,
             "bush": 11.2,
@@ -82,9 +87,10 @@
             "wall_stadium": 0,
             "other": 0.4
         }
-    },
-    "Bounty": {
-        "DrySeason": {
+    ],
+    "Bounty": [
+        {
+            "name": "DrySeason",
             "id": 15000083,
             "floor": 78.5,
             "bush": 14.5,
@@ -94,7 +100,8 @@
             "wall_stadium": 0,
             "other": 0.1
         },
-        "Hideout": {
+        {
+            "name": "Hideout",
             "id": 15000022,
             "floor": 84.3,
             "bush": 8.9,
@@ -104,7 +111,8 @@
             "wall_stadium": 0,
             "other": 0.2
         },
-        "LayerCake": {
+        {
+            "name": "LayerCake",
             "id": 15000082,
             "floor": 56.5,
             "bush": 19.5,
@@ -114,7 +122,8 @@
             "wall_stadium": 0,
             "other": 0.7
         },
-        "ShootingStar": {
+        {
+            "name": "ShootingStar",
             "id": 15000005,
             "floor": 82,
             "bush": 6.8,
@@ -124,9 +133,10 @@
             "wall_stadium": 0,
             "other": 0.9
         }
-    },
-    "HotZone": {
-        "DuelingBeetles": {
+    ],
+    "HotZone": [
+        {
+            "name": "DuelingBeetles",
             "id": 15000306,
             "floor": 72.5,
             "bush": 7.7,
@@ -136,7 +146,8 @@
             "wall_stadium": 0,
             "other": 0.6
         },
-        "OpenBusiness": {
+        {
+            "name": "OpenBusiness",
             "id": 15000292,
             "floor": 81,
             "bush": 8.1,
@@ -146,7 +157,8 @@
             "wall_stadium": 0,
             "other": 0.6
         },
-        "ParallelPlays": {
+        {
+            "name": "ParallelPlays",
             "id": 15000293,
             "floor": 69.3,
             "bush": 15.6,
@@ -156,7 +168,8 @@
             "wall_stadium": 0,
             "other": 0.2
         },
-        "RingofFire": {
+        {
+            "name": "RingofFire",
             "id": 15000300,
             "floor": 69.9,
             "bush": 16.5,
@@ -166,9 +179,10 @@
             "wall_stadium": 0,
             "other": 0
         }
-    },
-    "BrawlBall": {
-        "BeachBall": {
+    ],
+    "BrawlBall": [
+        {
+            "name": "BeachBall",
             "id": 15000710,
             "floor": 62.2,
             "bush": 11.8,
@@ -178,7 +192,8 @@
             "wall_stadium": 16.1,
             "other": 0.3
         },
-        "CenterStage": {
+        {
+            "name": "CenterStage",
             "id": 15000132,
             "floor": 51.2,
             "bush": 21.4,
@@ -188,7 +203,8 @@
             "wall_stadium": 18.2,
             "other": 0.6
         },
-        "PinballDreams": {
+        {
+            "name": "PinballDreams",
             "id": 15000118,
             "floor": 59.4,
             "bush": 14.3,
@@ -198,7 +214,8 @@
             "wall_stadium": 16.1,
             "other": 1
         },
-        "SneakyFields": {
+        {
+            "name": "SneakyFields",
             "id": 15000050,
             "floor": 55.1,
             "bush": 16.5,
@@ -208,8 +225,9 @@
             "wall_stadium": 16.2,
             "other": 0.5
         },
-        "SpiralingOut": {
-            "id" : 15001021,
+        {
+            "name": "SpiralingOut",
+            "id": 15001021,
             "floor": 70.8,
             "bush": 5.2,
             "wall_soft": 7.4,
@@ -218,7 +236,8 @@
             "wall_stadium": 16.2,
             "other": 0.4
         },
-        "TripleDribble": {
+        {
+            "name": "TripleDribble",
             "id": 15000025,
             "floor": 67.5,
             "bush": 3.4,
@@ -228,9 +247,10 @@
             "wall_stadium": 16.3,
             "other": 0
         }
-    },
-    "GemGrab": {
-        "DoubleSwoosh": {
+    ],
+    "GemGrab": [
+        {
+            "name": "DoubleSwoosh",
             "id": 15000115,
             "floor": 70.7,
             "bush": 24.6,
@@ -240,7 +260,8 @@
             "wall_stadium": 0,
             "other": 0
         },
-        "GemFort": {
+        {
+            "name": "GemFort",
             "id": 15000010,
             "floor": 68.6,
             "bush": 23.6,
@@ -250,7 +271,8 @@
             "wall_stadium": 0,
             "other": 0.4
         },
-        "HardRockMine": {
+        {
+            "name": "HardRockMine",
             "id": 15000007,
             "floor": 67.5,
             "bush": 19.8,
@@ -260,7 +282,8 @@
             "wall_stadium": 0,
             "other": 0.4
         },
-        "Undermine": {
+        {
+            "name": "Undermine",
             "id": 15000011,
             "floor": 66.8,
             "bush": 23.9,
@@ -270,5 +293,5 @@
             "wall_stadium": 0,
             "other": 0.4
         }
-    }
+    ]
 }

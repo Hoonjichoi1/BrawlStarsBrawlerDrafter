@@ -20,6 +20,7 @@ function App() {
 
     const onMapChange = (map) => {
         setSelectedMap(map);
+        console.log("Selected Map:", map);
     }
 
     return (

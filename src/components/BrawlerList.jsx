@@ -1,5 +1,6 @@
 import "./BrawlerList.css";
 import { useFetchBrawlers } from '../hooks/useFetchBrawlers.js';
+import { BrawlerCard } from "./BrawlerCard.jsx";
 
 export const BrawlerList = ({ recommendedBrawler }) => {
     const apiBrawlers = useFetchBrawlers();
@@ -7,12 +8,10 @@ export const BrawlerList = ({ recommendedBrawler }) => {
     const filteredBrawlers = Object.values(apiBrawlers).filter((b) => validIds.includes(b.id));
 
     return (
-        <div className="BrawlerList"> {filteredBrawlers.map((brawler) =>
-            <div key={brawler.id} className="brawler-card">
-                <img src={brawler.imageUrl} alt={brawler.name} />
-                <div className="brawler-name"> {brawler.name} </div>
-            </div>
-        )}
+        <div className="BrawlerList">
+            {filteredBrawlers.map((brawler) =>
+                <BrawlerCard key={brawler.id} brawler={brawler}/>
+            )}
         </div>
     )
 }

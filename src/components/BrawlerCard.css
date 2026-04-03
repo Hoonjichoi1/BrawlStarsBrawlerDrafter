@@ -1,0 +1,28 @@
+.BrawlerCard {
+    width: 100%;
+    max-height: 200px;
+    max-width: fit-content;
+    background: var(--bg-card);
+    border: 1.5px solid var(--border-default);
+    border-radius: 10px;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.BrawlerCard img {
+    width: 100%;
+    max-height: 130px;
+    max-width: fit-content;
+    height: auto;
+    border-radius: 8px;
+}
+
+.brawler-name {
+    font-size: 18px;
+    color: var(--text-primary);
+    font-weight: 600;
+    text-align: center;
+}
