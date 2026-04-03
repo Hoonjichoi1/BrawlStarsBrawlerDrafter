@@ -19,12 +19,15 @@ export const MapSelect = ({ selectedMode, onMapChange }) => {
     return (
         <div className='MapSelect'>
             {filteredMaps.map((item) => (
-                <img className={`map-image ${selected === item.id ? "selected" : ""}`}
-                    onClick={() => handleMapSelect(item.id)}
-                    width="300"
-                    key={item.id}
-                    src={item.imageUrl}
-                    alt={item.name} />))}
+                <div>
+                    <img className={`map-image ${selected === item.id ? "selected" : ""}`}
+                        onClick={() => handleMapSelect(item.id)}
+                        key={item.id}
+                        src={item.imageUrl}
+                        alt={item.name} />
+                        <div className="map-name"> {item.name} </div>
+                </div>
+            ))}
         </div>
     )
 }

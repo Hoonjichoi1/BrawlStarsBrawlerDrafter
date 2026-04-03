@@ -12,12 +12,22 @@
     cursor: pointer;
     transition: all 0.15s;
     display: block;
+    filter: grayscale(100%);
 }
 
 .map-image:hover {
-    border-color: var(--accent-orange);
+    filter: grayscale(0%);
 }
 
 .map-image.selected {
     border-color: var(--accent-green);
+    filter: grayscale(0%);
+}
+
+.map-name {
+    font-size: 16px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-align: center;
+    padding-top: 4px;
 }
