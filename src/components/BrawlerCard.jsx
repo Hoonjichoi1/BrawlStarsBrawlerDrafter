@@ -18,9 +18,10 @@ export const BrawlerCard = ({ brawler }) => {
                 return "Assassin";
             case "controller":
                 return "Controller";
-            case "sniper":
             case "Marksman":
                 return "Marksman";
+            case "artillery":
+                return "Artillery";
             default:
                 return "Unknown";
         }
@@ -36,6 +37,10 @@ export const BrawlerCard = ({ brawler }) => {
         }
     }
 
+    const isWallBreaker =  () => {
+
+    }
+
     return (
         <div className="BrawlerCard">
             <img src={brawler.imageUrl} alt={brawler.name} />
@@ -44,6 +49,7 @@ export const BrawlerCard = ({ brawler }) => {
                 <p>Type: {brawlerType()}</p>
                 <p> Range: <span className={`brawler-range ${brawlerRange()}`}>{brawlerStat.range}</span></p>
                 <p> Effective Range : {brawlerStat.effective_range}</p>
+                <p> Wall-Breaker : {brawlerStat.wall_break ? "Yes" : "No"}</p>
             </div>
         </div>
     )

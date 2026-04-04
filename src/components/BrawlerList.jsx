@@ -7,9 +7,10 @@ export const BrawlerList = ({ recommendedBrawler }) => {
     const validIds = recommendedBrawler.map(b => b.id);
     const filteredBrawlers = Object.values(apiBrawlers).filter((b) => validIds.includes(b.id));
 
+    console.log("recommendedBrawler", recommendedBrawler);
     return (
         <div>
-            {recommendedBrawler &&
+            {recommendedBrawler.length > 0 &&
                 <div className="BrawlerList">
                     <p className="instruction">RECOMMENDED BRAWLERS</p>
                     <div className="brawler-cards">

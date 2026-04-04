@@ -106,7 +106,7 @@
         "wall_break": false,
         "attack_over_wall": true,
         "range": 9,
-        "type": "sniper",
+        "type": "marksman",
         "assassin_skill": false
     },
     "Piper": {
@@ -116,7 +116,7 @@
         "wall_break": true,
         "attack_over_wall": false,
         "range": 10,
-        "type": "sniper",
+        "type": "marksman",
         "assassin_skill": false
     },
     "Bea": {
@@ -126,7 +126,7 @@
         "wall_break": false,
         "attack_over_wall": true,
         "range": 10,
-        "type": "sniper",
+        "type": "marksman",
         "assassin_skill": false
     },
     "Najia": {
@@ -176,7 +176,7 @@
         "wall_break": true,
         "attack_over_wall": true,
         "range": 9,
-        "type": "Marksman",
+        "type": "marksman",
         "assassin_skill": false
     },
     "Pierce": {

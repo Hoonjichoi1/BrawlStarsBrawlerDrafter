@@ -23,9 +23,12 @@ export const MapSelect = ({ selectedMode, onMapChange, selectedMap }) => {
 
     const handleMapSelect = (id) => {
         const found = modeMaps.find(map => map.id === id);
-        if (found) {
+        if (found && !selected) {
             onMapChange({ mode: selectedMode, ...found });
             setSelected(id);
+        } else if (found && selected) {
+            setSelected(null)
+            onMapChange("");
         }
     }
 

@@ -8,18 +8,23 @@ import { useState } from 'react';
 function App() {
     const [selectedMap, setSelectedMap] = useState("");
     const [selectedMode, setSelectedMode] = useState("");
-    const brawlerForMap = () => recommendBrawler({ mode: selectedMode, name: selectedMap[0] });
+    const brawlerForMap = () => recommendBrawler(selectedMap);
     const recommendedBrawler = selectedMap ? brawlerForMap() : [];
 
     const onModeChange = (mode) => {
-        if (mode !== selectedMode) {
-            setSelectedMap("")
+        if (mode === selectedMode) {
+            setSelectedMode("")
+        } else {
+            setSelectedMode(mode);
         }
-        setSelectedMode(mode);
     }
 
     const onMapChange = (map) => {
-        setSelectedMap(map);
+        if (map === selectedMap) {
+            setSelectedMap("")
+        } else {
+            setSelectedMap(map);
+        }
     }
 
     return (
@@ -30,7 +35,7 @@ function App() {
                 selectedMode={selectedMode} />
             <MapSelect
                 selectedMode={selectedMode}
-                onMapChange={onMapChange} 
+                onMapChange={onMapChange}
                 selectedMap={selectedMap} />
             <BrawlerList
                 recommendedBrawler={recommendedBrawler} />
