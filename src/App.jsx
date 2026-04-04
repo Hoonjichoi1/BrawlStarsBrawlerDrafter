@@ -16,6 +16,7 @@ function App() {
             setSelectedMode("")
         } else {
             setSelectedMode(mode);
+            setSelectedMap("");
         }
     }
 

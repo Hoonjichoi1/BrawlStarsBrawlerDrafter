@@ -3,8 +3,6 @@ import brawlerData from '../data/brawlerData.json';
 
 export const BrawlerCard = ({ brawler }) => {
     const brawlerStat = Object.values(brawlerData).find((info) => info.id === brawler.id);
-    console.log(brawlerStat);
-    console.log("brawler", brawler);
 
     const brawlerType = () => {
         switch (brawlerStat.type) {
@@ -35,10 +33,6 @@ export const BrawlerCard = ({ brawler }) => {
         } else {
             return "short";
         }
-    }
-
-    const isWallBreaker =  () => {
-
     }
 
     return (
