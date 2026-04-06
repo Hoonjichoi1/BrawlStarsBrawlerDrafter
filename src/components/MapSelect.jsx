@@ -2,7 +2,7 @@ import "./MapSelect.css";
 import mapData from '../data/mapData.json';
 import { useFetchMaps } from '../hooks/useFetchMaps.js';
 import { useState } from 'react';
-import { classifyMap } from "../util/recommend.js";
+import { classifyMap } from '../util/mapTagger.js';
 
 const MODES = [
     { value: "GemGrab", strategy: "Gem Grab" },
@@ -19,13 +19,16 @@ export const MapSelect = ({ selectedMode, onMapChange, selectedMap }) => {
     const modeMapIds = modeMaps.map(m => m.id);
     const filteredMaps = apiMaps.filter(map => modeMapIds.includes(map.id)); // from api data for map images
     const [selected, setSelected] = useState(null);
-    const selectedTags = classifyMap(selectedMap);
+    const selectedTags = classifyMap(selectedMode, selectedMap);
+
+    console.log("selectedTags", selectedTags);
+    console.log("selectedMap", selectedMap);
 
     const handleMapSelect = (id) => {
         const found = modeMaps.find(map => map.id === id);
         console.log("found", found);
         console.log("selectedMap", selectedMap);
-        if (selectedMap.id === found.id && selected) { 
+        if (selectedMap.id === found.id && selected) {
             setSelected(null)
             onMapChange("");
         } else {
@@ -50,11 +53,11 @@ export const MapSelect = ({ selectedMode, onMapChange, selectedMap }) => {
             {selectedMap &&
                 <div className="Map-analysis">
                     <h3>Map analysis of "{`${selectedMap.name}`}"</h3>
-                    <div className="map-tags"> {selectedTags && selectedTags.map(tag => "#" + `${tag}` + " ")} </div>
+                    <div className="map-tags"> {selectedTags && Object.values(selectedTags).map(tag => "#" + `${tag}` + " ")} </div>
                     <p> 🎮 Game Mode : {selectedMap.mode} ⇨ {MODES.find(m => m.value === selectedMap.mode)?.strategy}</p>
-                    <p> 🌱 Bush Coverage: {(selectedMap.bush / 693 * 100).toFixed(1)}% = {selectedMap.bush} units out of 693 units</p>
-                    <p> 🪨 Wall Coverage: {(selectedMap.wall_hard + selectedMap.wall_soft / 693 * 100).toFixed(1)}% = {(selectedMap.wall_hard + selectedMap.wall_soft).toFixed(1)} units out of 693 units</p>
-                    <p> 💧 Water Coverage: {(selectedMap.water / 693 * 100).toFixed(1)}% = {selectedMap.water} units out of 693 units</p>
+                    <p> 🌱 Bush Coverage: {(selectedMap.terrain.bush)}%</p>
+                    <p> 🪨 Wall Coverage: {(selectedMap.terrain.wall_total)}% </p>
+                    <p> 💧 Water Coverage: {(selectedMap.terrain.water)}%</p>
                 </div>
             }
         </div>

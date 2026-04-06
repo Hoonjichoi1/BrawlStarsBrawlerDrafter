@@ -1,302 +1,693 @@
-{
-    "Bibi": {
-        "id": 16000026,
-        "effective_range": "close",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": false,
-        "range": 3.7,
-        "type": "tank",
-        "assassin_skill": false
+[
+  {
+    "id": 16000049,
+    "name": "Buzz",
+    "type": "assassin",
+    "effective_range": "close",
+    "range": 2.7,
+    "health": 10000,
+    "speed": 770,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 1,
+      "bush_check": 1,
+      "control": 2,
+      "survivability": 2,
+      "objective_damage": 1
     },
-    "Mortis": {
-        "id": 16000011,
-        "effective_range": "close",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": false,
-        "range": 2.7,
-        "type": "assassin",
-        "assassin_skill": true
+    "extra_tags": [
+      "stun"
+    ]
+  },
+  {
+    "id": 16000073,
+    "name": "Chuck",
+    "type": "controller",
+    "effective_range": "mid",
+    "range": 6.7,
+    "health": 9400,
+    "speed": 770,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 2,
+      "bush_check": 0,
+      "control": 1,
+      "survivability": 2,
+      "objective_damage": 2
     },
-    "Bull": {
-        "id": 16000002,
-        "effective_range": "close",
-        "thrower": false,
-        "wall_break": true,
-        "attack_over_wall": false,
-        "range": 5.3,
-        "type": "tank",
-        "assassin_skill": true
+    "extra_tags": [
+      "mobility",
+      "fast_super"
+    ]
+  },
+  {
+    "id": 16000002,
+    "name": "Bull",
+    "type": "tank",
+    "effective_range": "close",
+    "range": 5.3,
+    "health": 10600,
+    "speed": 770,
+    "features": {
+      "terrain_change": true,
+      "wall_break": false,
+      "mobility": 1,
+      "bush_check": 1,
+      "control": 0,
+      "survivability": 2,
+      "objective_damage": 2
     },
-    "Rico": {
-        "id": 16000004,
-        "effective_range": "long",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": false,
-        "range": 9.7,
-        "type": "damage_dealer",
-        "assassin_skill": false
+    "extra_tags": []
+  },
+  {
+    "id": 16000043,
+    "name": "Edgar",
+    "type": "assassin",
+    "effective_range": "close",
+    "range": 2,
+    "health": 7400,
+    "speed": 820,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 2,
+      "bush_check": 0,
+      "control": 0,
+      "survivability": 2,
+      "objective_damage": 1
     },
-    "Sirius": {
-        "id": 16000102,
-        "effective_range": "mid",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": false,
-        "range": 7.3,
-        "type": "controller",
-        "assassin_skill": false
+    "extra_tags": [
+      "mobility"
+    ]
+  },
+  {
+    "id": 16000020,
+    "name": "Frank",
+    "type": "tank",
+    "effective_range": "mid",
+    "range": 6,
+    "health": 13600,
+    "speed": 770,
+    "features": {
+      "terrain_change": true,
+      "wall_break": true,
+      "mobility": 0,
+      "bush_check": 1,
+      "control": 2,
+      "survivability": 1,
+      "objective_damage": 1
     },
-    "Crow": {
-        "id": 16000017,
-        "effective_range": "mid",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": false,
-        "range": 8.7,
-        "type": "assassin",
-        "assassin_skill": true
+    "extra_tags": [
+      "wall_break"
+    ]
+  },
+  {
+    "id": 16000076,
+    "name": "Kit",
+    "type": "support",
+    "effective_range": "close",
+    "range": 3.7,
+    "health": 6200,
+    "speed": 820,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 1,
+      "bush_check": 0,
+      "control": 2,
+      "survivability": 1,
+      "objective_damage": 1
     },
-    "Colt": {
-        "id": 16000001,
-        "effective_range": "long",
-        "thrower": false,
-        "wall_break": true,
-        "attack_over_wall": false,
-        "range": 9,
-        "type": "damage_dealer",
-        "assassin_skill": false
+    "extra_tags": [
+      "mobility",
+      "dodge"
+    ]
+  },
+  {
+    "id": 16000005,
+    "name": "Spike",
+    "type": "damage_dealer",
+    "effective_range": "mid",
+    "range": 7.7,
+    "health": 6000,
+    "speed": 720,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 0,
+      "bush_check": 2,
+      "control": 2,
+      "survivability": 0,
+      "objective_damage": 1
     },
-    "Spike": {
-        "id": 16000005,
-        "effective_range": "mid",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": true,
-        "range": 7.7,
-        "type": "damage_dealer",
-        "assassin_skill": false
+    "extra_tags": []
+  },
+  {
+    "id": 16000070,
+    "name": "Cordelus",
+    "type": "assassin",
+    "effective_range": "mid",
+    "range": 5.3,
+    "health": 7000,
+    "speed": 820,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 1,
+      "bush_check": 0,
+      "control": 2,
+      "survivability": 0,
+      "objective_damage": 1
     },
-    "Leon": {
-        "id": 16000023,
-        "effective_range": "close",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": false,
-        "range": 9.7,
-        "type": "assassin",
-        "assassin_skill": true
+    "extra_tags": [
+      "mobility"
+    ]
+  },
+  {
+    "id": 16000017,
+    "name": "Crow",
+    "type": "assassin",
+    "effective_range": "mid",
+    "range": 8.7,
+    "health": 6000,
+    "speed": 820,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 1,
+      "bush_check": 2,
+      "control": 0,
+      "survivability": 0,
+      "objective_damage": 1
     },
-    "Emz": {
-        "id": 16000030,
-        "effective_range": "mid",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": true,
-        "range": 6.7,
-        "type": "damage_dealer",
-        "assassin_skill": false
+    "extra_tags": [
+      "mobility"
+    ]
+  },
+  {
+    "id": 16000054,
+    "name": "Fang",
+    "type": "assassin",
+    "effective_range": "close",
+    "range": 9.33,
+    "health": 9000,
+    "speed": 770,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 1,
+      "bush_check": 0,
+      "control": 0,
+      "survivability": 2,
+      "objective_damage": 1
     },
-    "Mandy": {
-        "id": 16000065,
-        "effective_range": "long",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": true,
-        "range": 9,
-        "type": "marksman",
-        "assassin_skill": false
+    "extra_tags": [
+      "dodge"
+    ]
+  },
+  {
+    "id": 16000041,
+    "name": "Lou",
+    "type": "controller",
+    "effective_range": "long",
+    "range": 9.3,
+    "health": 7000,
+    "speed": 720,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 0,
+      "bush_check": 1,
+      "control": 2,
+      "survivability": 0,
+      "objective_damage": 1
     },
-    "Piper": {
-        "id": 16000015,
-        "effective_range": "long",
-        "thrower": false,
-        "wall_break": true,
-        "attack_over_wall": false,
-        "range": 10,
-        "type": "marksman",
-        "assassin_skill": false
+    "extra_tags": []
+  },
+  {
+    "id": 16000011,
+    "name": "Mortis",
+    "type": "assassin",
+    "effective_range": "close",
+    "range": 2.7,
+    "health": 8000,
+    "speed": 820,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 2,
+      "bush_check": 0,
+      "control": 0,
+      "survivability": 1,
+      "objective_damage": 1
     },
-    "Bea": {
-        "id": 16000029,
-        "effective_range": "long",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": true,
-        "range": 10,
-        "type": "marksman",
-        "assassin_skill": false
+    "extra_tags": []
+  },
+  {
+    "id": 16000013,
+    "name": "Poko",
+    "type": "support",
+    "effective_range": "mid",
+    "range": 7,
+    "health": 8000,
+    "speed": 720,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 0,
+      "bush_check": 2,
+      "control": 0,
+      "survivability": 2,
+      "objective_damage": 0
     },
-    "Najia": {
-        "id": 16000103,
-        "effective_range": "mid",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": false,
-        "range": 5.3,
-        "type": "damage_dealer",
-        "assassin_skill": false
+    "extra_tags": []
+  },
+  {
+    "id": 16000000,
+    "name": "Shelly",
+    "type": "damage_dealer",
+    "effective_range": "close",
+    "range": 7.7,
+    "health": 7800,
+    "speed": 770,
+    "features": {
+      "terrain_change": true,
+      "wall_break": true,
+      "mobility": 0,
+      "bush_check": 1,
+      "control": 2,
+      "survivability": 0,
+      "objective_damage": 1
     },
-    "Bo": {
-        "id": 16000014,
-        "effective_range": "mid",
-        "thrower": false,
-        "wall_break": true,
-        "attack_over_wall": false,
-        "range": 8.7,
-        "type": "controller",
-        "assassin_skill": false
+    "extra_tags": [
+      "wall_break"
+    ]
+  },
+  {
+    "id": 16000045,
+    "name": "Stu",
+    "type": "assassin",
+    "effective_range": "mid",
+    "range": 7.7,
+    "health": 7000,
+    "speed": 720,
+    "features": {
+      "terrain_change": true,
+      "wall_break": true,
+      "mobility": 2,
+      "bush_check": 1,
+      "control": 0,
+      "survivability": 0,
+      "objective_damage": 1
     },
-    "Fang": {
-        "id": 16000054,
-        "effective_range": "close",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": false,
-        "range": 9.33,
-        "type": "assassin",
-        "assassin_skill": true
+    "extra_tags": [
+      "wall_break",
+      "fast_super",
+      "dodge"
+    ]
+  },
+  {
+    "id": 16000026,
+    "name": "Bibi",
+    "type": "tank",
+    "effective_range": "close",
+    "range": 3.7,
+    "health": 10000,
+    "speed": 820,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 0,
+      "bush_check": 0,
+      "control": 1,
+      "survivability": 1,
+      "objective_damage": 1
     },
-    "Byron": {
-        "id": 16000042,
-        "effective_range": "long",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": true,
-        "range": 10,
-        "type": "support",
-        "assassin_skill": false
+    "extra_tags": []
+  },
+  {
+    "id": 16000003,
+    "name": "Brock",
+    "type": "marksman",
+    "effective_range": "long",
+    "range": 9,
+    "health": 6000,
+    "speed": 720,
+    "features": {
+      "terrain_change": true,
+      "wall_break": true,
+      "mobility": 0,
+      "bush_check": 1,
+      "control": 1,
+      "survivability": 0,
+      "objective_damage": 1
     },
-    "Brock": {
-        "id": 16000003,
-        "effective_range": "long",
-        "thrower": false,
-        "wall_break": true,
-        "attack_over_wall": true,
-        "range": 9,
-        "type": "marksman",
-        "assassin_skill": false
+    "extra_tags": [
+      "wall_break",
+      "dot"
+    ]
+  },
+  {
+    "id": 16000063,
+    "name": "Chester",
+    "type": "damage_dealer",
+    "effective_range": "mid",
+    "range": 8.3,
+    "health": 7600,
+    "speed": 770,
+    "features": {
+      "terrain_change": false,
+      "wall_break": true,
+      "mobility": 0,
+      "bush_check": 1,
+      "control": 1,
+      "survivability": 0,
+      "objective_damage": 1
     },
-    "Pierce": {
-        "id": 16000099,
-        "effective_range": "long",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": true,
-        "range": 10,
-        "type": "damage_dealer",
-        "assassin_skill": false
+    "extra_tags": [
+      "wall_break",
+      "stun"
+    ]
+  },
+  {
+    "id": 16000001,
+    "name": "Colt",
+    "type": "damage_dealer",
+    "effective_range": "long",
+    "range": 9,
+    "health": 6200,
+    "speed": 720,
+    "features": {
+      "terrain_change": true,
+      "wall_break": true,
+      "mobility": 0,
+      "bush_check": 1,
+      "control": 0,
+      "survivability": 0,
+      "objective_damage": 2
     },
-    "Chester": {
-        "id": 16000063,
-        "effective_range": "mid",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": true,
-        "range": 8.3,
-        "type": "damage_dealer",
-        "assassin_skill": false
+    "extra_tags": [
+      "wall_break"
+    ]
+  },
+  {
+    "id": 16000030,
+    "name": "Emz",
+    "type": "damage_dealer",
+    "effective_range": "mid",
+    "range": 6.7,
+    "health": 7800,
+    "speed": 720,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 0,
+      "bush_check": 2,
+      "control": 1,
+      "survivability": 0,
+      "objective_damage": 0
     },
-    "Shelly": {
-        "id": 16000000,
-        "effective_range": "close",
-        "thrower": false,
-        "wall_break": true,
-        "attack_over_wall": false,
-        "range": 7.7,
-        "type": "damage_dealer",
-        "assassin_skill": false
+    "extra_tags": []
+  },
+  {
+    "id": 16000023,
+    "name": "Leon",
+    "type": "assassin",
+    "effective_range": "close",
+    "range": 9.7,
+    "health": 7200,
+    "speed": 820,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 1,
+      "bush_check": 1,
+      "control": 0,
+      "survivability": 0,
+      "objective_damage": 1
     },
-    "Cordelus": {
-        "id": 16000070,
-        "effective_range": "mid",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": false,
-        "range": 5.3,
-        "type": "assassin",
-        "assassin_skill": true
+    "extra_tags": [
+      "stealth"
+    ]
+  },
+  {
+    "id": 16000075,
+    "name": "Mico",
+    "type": "assassin",
+    "effective_range": "close",
+    "range": 4,
+    "health": 7000,
+    "speed": 820,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 2,
+      "bush_check": 0,
+      "control": 0,
+      "survivability": 0,
+      "objective_damage": 1
     },
-    "Edgar": {
-        "id": 16000043,
-        "effective_range": "close",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": false,
-        "range": 2,
-        "type": "assassin",
-        "assassin_skill": true
+    "extra_tags": [
+      "mobility",
+      "dodge"
+    ]
+  },
+  {
+    "id": 16000022,
+    "name": "Tick",
+    "type": "artillery",
+    "effective_range": "mid",
+    "range": 8.7,
+    "health": 4800,
+    "speed": 720,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 0,
+      "bush_check": 2,
+      "control": 1,
+      "survivability": 0,
+      "objective_damage": 0
     },
-    "Tick": {
-        "id": 16000022,
-        "effective_range": "mid",
-        "thrower": true,
-        "wall_break": false,
-        "attack_over_wall": true,
-        "range": 8.7,
-        "type": "artillery",
-        "assassin_skill": false
+    "extra_tags": []
+  },
+  {
+    "id": 16000014,
+    "name": "Bo",
+    "type": "controller",
+    "effective_range": "mid",
+    "range": 8.7,
+    "health": 7600,
+    "speed": 720,
+    "features": {
+      "terrain_change": true,
+      "wall_break": true,
+      "mobility": 0,
+      "bush_check": 1,
+      "control": 1,
+      "survivability": 0,
+      "objective_damage": 0
     },
-    "Dynamike": {
-        "id": 16000009,
-        "effective_range": "mid",
-        "thrower": true,
-        "wall_break": true,
-        "attack_over_wall": true,
-        "range": 7.3,
-        "type": "artillery",
-        "assassin_skill": false
+    "extra_tags": [
+      "wall_break"
+    ]
+  },
+  {
+    "id": 16000042,
+    "name": "Byron",
+    "type": "marksman",
+    "effective_range": "long",
+    "range": 10,
+    "health": 5200,
+    "speed": 720,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 0,
+      "bush_check": 0,
+      "control": 0,
+      "survivability": 1,
+      "objective_damage": 1
     },
-    "Surge": {
-        "id": 16000038,
-        "effective_range": "mid",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": false,
-        "range": 6.7,
-        "type": "damage_dealer",
-        "assassin_skill": false
+    "extra_tags": [
+      "healing_team"
+    ]
+  },
+  {
+    "id": 16000074,
+    "name": "Charlie",
+    "type": "controller",
+    "effective_range": "long",
+    "range": 9,
+    "health": 7400,
+    "speed": 720,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 0,
+      "bush_check": 0,
+      "control": 2,
+      "survivability": 0,
+      "objective_damage": 0
     },
-    "Frank": {
-        "id": 16000020,
-        "effective_range": "mid",
-        "thrower": false,
-        "wall_break": true,
-        "attack_over_wall": false,
-        "range": 6,
-        "type": "tank",
-        "assassin_skill": false
+    "extra_tags": [
+      "stun"
+    ]
+  },
+  {
+    "id": 16000031,
+    "name": "Mr.P",
+    "type": "controller",
+    "effective_range": "mid",
+    "range": 7,
+    "health": 7400,
+    "speed": 720,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 0,
+      "bush_check": 2,
+      "control": 0,
+      "survivability": 0,
+      "objective_damage": 0
     },
-    "Buzz": {
-        "id": 16000049,
-        "effective_range": "close",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": false,
-        "range": 2.7,
-        "type": "assassin",
-        "assassin_skill": true
+    "extra_tags": []
+  },
+  {
+    "id": 16000015,
+    "name": "Piper",
+    "type": "marksman",
+    "effective_range": "long",
+    "range": 10,
+    "health": 5000,
+    "speed": 720,
+    "features": {
+      "terrain_change": true,
+      "wall_break": false,
+      "mobility": 0,
+      "bush_check": 0,
+      "control": 0,
+      "survivability": 1,
+      "objective_damage": 1
     },
-    "Stu": {
-        "id": 16000045,
-        "effective_range": "mid",
-        "thrower": false,
-        "wall_break": true,
-        "attack_over_wall": false,
-        "range": 7.7,
-        "type": "assassin",
-        "assassin_skill": false
+    "extra_tags": []
+  },
+  {
+    "id": 16000004,
+    "name": "Rico",
+    "type": "damage_dealer",
+    "effective_range": "long",
+    "range": 9.7,
+    "health": 6000,
+    "speed": 720,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 0,
+      "bush_check": 1,
+      "control": 0,
+      "survivability": 0,
+      "objective_damage": 1
     },
-    "Kit": {
-        "id": 16000076,
-        "effective_range": "close",
-        "thrower": false,
-        "wall_break": false,
-        "attack_over_wall": false,
-        "range": 3.7,
-        "type": "support",
-        "assassin_skill": true
-    }
-}
+    "extra_tags": []
+  },
+  {
+    "id": 16000038,
+    "name": "Surge",
+    "type": "damage_dealer",
+    "effective_range": "mid",
+    "range": 6.7,
+    "health": 6600,
+    "speed": 650,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 1,
+      "bush_check": 0,
+      "control": 0,
+      "survivability": 0,
+      "objective_damage": 1
+    },
+    "extra_tags": []
+  },
+  {
+    "id": 16000029,
+    "name": "Bea",
+    "type": "marksman",
+    "effective_range": "long",
+    "range": 10,
+    "health": 5600,
+    "speed": 720,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 0,
+      "bush_check": 0,
+      "control": 1,
+      "survivability": 0,
+      "objective_damage": 0
+    },
+    "extra_tags": []
+  },
+  {
+    "id": 16000009,
+    "name": "Dynamike",
+    "type": "artillery",
+    "effective_range": "mid",
+    "range": 7.3,
+    "health": 6000,
+    "speed": 770,
+    "features": {
+      "terrain_change": true,
+      "wall_break": true,
+      "mobility": 0,
+      "bush_check": 0,
+      "control": 0,
+      "survivability": 0,
+      "objective_damage": 1
+    },
+    "extra_tags": [
+      "wall_break"
+    ]
+  },
+  {
+    "id": 16000065,
+    "name": "Mandy",
+    "type": "marksman",
+    "effective_range": "long",
+    "range": 9,
+    "health": 6000,
+    "speed": 720,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 0,
+      "bush_check": 0,
+      "control": 0,
+      "survivability": 0,
+      "objective_damage": 1
+    },
+    "extra_tags": []
+  },
+  {
+    "id": 16000099,
+    "name": "Pierce",
+    "type": "marksman",
+    "effective_range": "long",
+    "range": 10,
+    "health": 6000,
+    "speed": 720,
+    "features": {
+      "terrain_change": false,
+      "wall_break": false,
+      "mobility": 0,
+      "bush_check": 0,
+      "control": 0,
+      "survivability": 0,
+      "objective_damage": 1
+    },
+    "extra_tags": []
+  }
+]

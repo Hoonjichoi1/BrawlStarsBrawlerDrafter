@@ -1,297 +1,483 @@
 {
-    "Heist": [
-        {
-            "name": "BridgeTooFar",
-            "id": 15000072,
-            "floor": 66.6,
-            "bush": 12,
-            "wall_soft": 2.3,
-            "wall_hard": 0.6,
-            "water": 18,
-            "wall_stadium": 0,
-            "other": 0.6
-        }, {
-            "name": "HotPotato",
-            "id": 15000053,
-            "floor": 67.6,
-            "bush": 18.3,
-            "wall_soft": 10.8,
-            "wall_hard": 2.9,
-            "water": 0,
-            "wall_stadium": 0,
-            "other": 0.4
-        }, {
-            "name": "KaboomCanyon",
-            "id": 15000018,
-            "floor": 69.7,
-            "bush": 15.5,
-            "wall_soft": 6.6,
-            "wall_hard": 3.2,
-            "water": 4.6,
-            "wall_stadium": 0,
-            "other": 0.5
-        }, {
-            "name": "SafeZone",
-            "id": 15000019,
-            "floor": 72.4,
-            "bush": 12.6,
-            "wall_soft": 7.5,
-            "wall_hard": 2.3,
-            "water": 5.1,
-            "wall_stadium": 0,
-            "other": 0
-        }
-    ],
-    "KnockOut": [
-        {
-            "name": "Belle'sRock",
-            "id": 15000368,
-            "floor": 79.4,
-            "bush": 6,
-            "wall_soft": 13,
-            "wall_hard": 1.4,
-            "water": 0,
-            "wall_stadium": 0,
-            "other": 0.2
-        },
-        {
-            "name": "FlaringPhoenix",
-            "id": 15000440,
-            "floor": 73.4,
-            "bush": 16.2,
-            "wall_soft": 9.5,
-            "wall_hard": 0.8,
-            "water": 0,
-            "wall_stadium": 0,
-            "other": 0
-        },
-        {
-            "name": "NewHorizons",
-            "id": 15000703,
-            "floor": 78.5,
-            "bush": 7.6,
-            "wall_soft": 8.6,
-            "wall_hard": 0,
-            "water": 5.1,
-            "wall_stadium": 0,
-            "other": 0.2
-        },
-        {
-            "name": "OutintheOpen",
-            "id": 15000548,
-            "floor": 79.4,
-            "bush": 11.2,
-            "wall_soft": 4,
-            "wall_hard": 2.6,
-            "water": 2.3,
-            "wall_stadium": 0,
-            "other": 0.4
-        }
-    ],
-    "Bounty": [
-        {
-            "name": "DrySeason",
-            "id": 15000083,
-            "floor": 78.5,
-            "bush": 14.5,
-            "wall_soft": 5.5,
-            "wall_hard": 1.5,
-            "water": 0,
-            "wall_stadium": 0,
-            "other": 0.1
-        },
-        {
-            "name": "Hideout",
-            "id": 15000022,
-            "floor": 84.3,
-            "bush": 8.9,
-            "wall_soft": 6.6,
-            "wall_hard": 0,
-            "water": 0,
-            "wall_stadium": 0,
-            "other": 0.2
-        },
-        {
-            "name": "LayerCake",
-            "id": 15000082,
-            "floor": 56.5,
-            "bush": 19.5,
-            "wall_soft": 12.4,
-            "wall_hard": 4.3,
-            "water": 6.6,
-            "wall_stadium": 0,
-            "other": 0.7
-        },
-        {
-            "name": "ShootingStar",
-            "id": 15000005,
-            "floor": 82,
-            "bush": 6.8,
-            "wall_soft": 6.6,
-            "wall_hard": 1.1,
-            "water": 2.6,
-            "wall_stadium": 0,
-            "other": 0.9
-        }
-    ],
-    "HotZone": [
-        {
-            "name": "DuelingBeetles",
-            "id": 15000306,
-            "floor": 72.5,
-            "bush": 7.7,
-            "wall_soft": 6.1,
-            "wall_hard": 2.8,
-            "water": 10.3,
-            "wall_stadium": 0,
-            "other": 0.6
-        },
-        {
-            "name": "OpenBusiness",
-            "id": 15000292,
-            "floor": 81,
-            "bush": 8.1,
-            "wall_soft": 10.4,
-            "wall_hard": 0,
-            "water": 0,
-            "wall_stadium": 0,
-            "other": 0.6
-        },
-        {
-            "name": "ParallelPlays",
-            "id": 15000293,
-            "floor": 69.3,
-            "bush": 15.6,
-            "wall_soft": 9.5,
-            "wall_hard": 0.9,
-            "water": 4.6,
-            "wall_stadium": 0,
-            "other": 0.2
-        },
-        {
-            "name": "RingofFire",
-            "id": 15000300,
-            "floor": 69.9,
-            "bush": 16.5,
-            "wall_soft": 9,
-            "wall_hard": 0,
-            "water": 4.6,
-            "wall_stadium": 0,
-            "other": 0
-        }
-    ],
-    "BrawlBall": [
-        {
-            "name": "BeachBall",
-            "id": 15000710,
-            "floor": 62.2,
-            "bush": 11.8,
-            "wall_soft": 9.5,
-            "wall_hard": 0,
-            "water": 0,
-            "wall_stadium": 16.1,
-            "other": 0.3
-        },
-        {
-            "name": "CenterStage",
-            "id": 15000132,
-            "floor": 51.2,
-            "bush": 21.4,
-            "wall_soft": 8.6,
-            "wall_hard": 0,
-            "water": 0,
-            "wall_stadium": 18.2,
-            "other": 0.6
-        },
-        {
-            "name": "PinballDreams",
-            "id": 15000118,
-            "floor": 59.4,
-            "bush": 14.3,
-            "wall_soft": 9.3,
-            "wall_hard": 0,
-            "water": 0,
-            "wall_stadium": 16.1,
-            "other": 1
-        },
-        {
-            "name": "SneakyFields",
-            "id": 15000050,
-            "floor": 55.1,
-            "bush": 16.5,
-            "wall_soft": 11.7,
-            "wall_hard": 0,
-            "water": 0,
-            "wall_stadium": 16.2,
-            "other": 0.5
-        },
-        {
-            "name": "SpiralingOut",
-            "id": 15001021,
-            "floor": 70.8,
-            "bush": 5.2,
-            "wall_soft": 7.4,
-            "wall_hard": 0,
-            "water": 0,
-            "wall_stadium": 16.2,
-            "other": 0.4
-        },
-        {
-            "name": "TripleDribble",
-            "id": 15000025,
-            "floor": 67.5,
-            "bush": 3.4,
-            "wall_soft": 12.7,
-            "wall_hard": 0,
-            "water": 0,
-            "wall_stadium": 16.3,
-            "other": 0
-        }
-    ],
-    "GemGrab": [
-        {
-            "name": "DoubleSwoosh",
-            "id": 15000115,
-            "floor": 70.7,
-            "bush": 24.6,
-            "wall_soft": 4.1,
-            "wall_hard": 0.6,
-            "water": 0,
-            "wall_stadium": 0,
-            "other": 0
-        },
-        {
-            "name": "GemFort",
-            "id": 15000010,
-            "floor": 68.6,
-            "bush": 23.6,
-            "wall_soft": 4,
-            "wall_hard": 3.4,
-            "water": 0,
-            "wall_stadium": 0,
-            "other": 0.4
-        },
-        {
-            "name": "HardRockMine",
-            "id": 15000007,
-            "floor": 67.5,
-            "bush": 19.8,
-            "wall_soft": 10.9,
-            "wall_hard": 1.4,
-            "water": 0,
-            "wall_stadium": 0,
-            "other": 0.4
-        },
-        {
-            "name": "Undermine",
-            "id": 15000011,
-            "floor": 66.8,
-            "bush": 23.9,
-            "wall_soft": 8.9,
-            "wall_hard": 0,
-            "water": 0,
-            "wall_stadium": 0,
-            "other": 0.4
-        }
-    ]
+  "GemGrab": [
+    {
+      "name": "DoubleSwoosh",
+      "id": 15000115,
+      "mode": "GemGrab",
+      "terrain": {
+        "bush": 24.6,
+        "wall_soft": 4.1,
+        "wall_hard": 0.6,
+        "water": 0,
+        "wall_total": 4.7
+      },
+      "features": {
+        "openness": 0,
+        "choke": 0,
+        "flank": 2,
+        "bush_position": 2
+      }
+    },
+    {
+      "name": "HardRockMine",
+      "id": 15000007,
+      "mode": "GemGrab",
+      "terrain": {
+        "bush": 19.8,
+        "wall_soft": 10.9,
+        "wall_hard": 1.4,
+        "water": 0,
+        "wall_total": 12.3
+      },
+      "features": {
+        "openness": 1,
+        "choke": 2,
+        "flank": 1,
+        "bush_position": 2
+      }
+    },
+    {
+      "name": "GemFort",
+      "id": 15000010,
+      "mode": "GemGrab",
+      "terrain": {
+        "bush": 23.6,
+        "wall_soft": 4,
+        "wall_hard": 3.4,
+        "water": 0,
+        "wall_total": 7.4
+      },
+      "features": {
+        "openness": 1,
+        "choke": 2,
+        "flank": 1,
+        "bush_position": 2
+      }
+    },
+    {
+      "name": "Undermine",
+      "id": 15000011,
+      "mode": "GemGrab",
+      "terrain": {
+        "bush": 23.9,
+        "wall_soft": 8.9,
+        "wall_hard": 0,
+        "water": 0,
+        "wall_total": 8.9
+      },
+      "features": {
+        "openness": 0,
+        "choke": 1,
+        "flank": 2,
+        "bush_position": 2
+      }
+    }
+  ],
+  "Heist": [
+    {
+      "name": "BridgeTooFar",
+      "id": 15000072,
+      "mode": "Heist",
+      "terrain": {
+        "bush": 12,
+        "wall_soft": 2.3,
+        "wall_hard": 0.6,
+        "water": 18,
+        "wall_total": 2.9
+      },
+      "features": {
+        "openness": 2,
+        "choke": 2,
+        "flank": 0,
+        "bush_position": 1
+      }
+    },
+    {
+      "name": "HotPotato",
+      "id": 15000053,
+      "mode": "Heist",
+      "terrain": {
+        "bush": 18.3,
+        "wall_soft": 10.8,
+        "wall_hard": 2.9,
+        "water": 0,
+        "wall_total": 13.7
+      },
+      "features": {
+        "openness": 0,
+        "choke": 1,
+        "flank": 2,
+        "bush_position": 2
+      }
+    },
+    {
+      "name": "KaboomCanyon",
+      "id": 15000018,
+      "mode": "Heist",
+      "terrain": {
+        "bush": 15.5,
+        "wall_soft": 6.6,
+        "wall_hard": 3.2,
+        "water": 4.6,
+        "wall_total": 9.8
+      },
+      "features": {
+        "openness": 1,
+        "choke": 2,
+        "flank": 0,
+        "bush_position": 2
+      }
+    },
+    {
+      "name": "SafeZone",
+      "id": 15000019,
+      "mode": "Heist",
+      "terrain": {
+        "bush": 12.6,
+        "wall_soft": 7.5,
+        "wall_hard": 2.3,
+        "water": 5.1,
+        "wall_total": 9.8
+      },
+      "features": {
+        "openness": 2,
+        "choke": 2,
+        "flank": 1,
+        "bush_position": 0
+      }
+    }
+  ],
+  "Bounty": [
+    {
+      "name": "DrySeason",
+      "id": 15000083,
+      "mode": "Bounty",
+      "terrain": {
+        "bush": 14.5,
+        "wall_soft": 5.5,
+        "wall_hard": 1.5,
+        "water": 0,
+        "wall_total": 7.0
+        
+      },
+      "features": {
+        "openness": 2,
+        "choke": 0,
+        "flank": 1,
+        "bush_position": 0
+      }
+    },
+    {
+      "name": "Hideout",
+      "id": 15000022,
+      "mode": "Bounty",
+      "terrain": {
+        "bush": 8.9,
+        "wall_soft": 6.6,
+        "wall_hard": 0,
+        "water": 0,
+        "wall_total": 6.6
+      },
+      "features": {
+        "openness": 2,
+        "choke": 0,
+        "flank": 0,
+        "bush_position": 1
+      }
+    },
+    {
+      "name": "LayerCake",
+      "id": 15000082,
+      "mode": "Bounty",
+      "terrain": {
+        "bush": 19.5,
+        "wall_soft": 12.4,
+        "wall_hard": 4.3,
+        "water": 6.6,
+        "wall_total": 16.7
+      },
+      "features": {
+        "openness": 0,
+        "choke": 0,
+        "flank": 2,
+        "bush_position": 2
+      }
+    },
+    {
+      "name": "ShootingStar",
+      "id": 15000005,
+      "mode": "Bounty",
+      "terrain": {
+        "bush": 6.8,
+        "wall_soft": 6.6,
+        "wall_hard": 1.1,
+        "water": 2.6,
+        "wall_total": 7.7
+      },
+      "features": {
+        "openness": 2,
+        "choke": 0,
+        "flank": 0,
+        "bush_position": 1
+      }
+    }
+  ],
+  "HotZone": [
+    {
+      "name": "DuelingBeetles",
+      "id": 15000306,
+      "mode": "HotZone",
+      "terrain": {
+        "bush": 7.7,
+        "wall_soft": 6.1,
+        "wall_hard": 2.8,
+        "water": 10.3,
+        "wall_total": 8.9
+      },
+      "features": {
+        "openness": 0,
+        "choke": 1,
+        "flank": 0,
+        "bush_position": 2
+      }
+    },
+    {
+      "name": "OpenBusiness",
+      "id": 15000292,
+      "mode": "HotZone",
+      "terrain": {
+        "bush": 8.1,
+        "wall_soft": 10.4,
+        "wall_hard": 0,
+        "water": 0,
+        "wall_total": 10.4
+      },
+      "features": {
+        "openness": 1,
+        "choke": 0,
+        "flank": 1,
+        "bush_position": 1
+      }
+    },
+    {
+      "name": "ParallelPlays",
+      "id": 15000293,
+      "mode": "HotZone",
+      "terrain": {
+        "bush": 15.6,
+        "wall_soft": 9.5,
+        "wall_hard": 0.9,
+        "water": 4.6,
+        "wall_total": 10.4
+      },
+      "features": {
+        "openness": 0,
+        "choke": 1,
+        "flank": 1,
+        "bush_position": 1
+      }
+    },
+    {
+      "name": "RingofFire",
+      "id": 15000300,
+      "mode": "HotZone",
+      "terrain": {
+        "bush": 16.5,
+        "wall_soft": 9,
+        "wall_hard": 0,
+        "water": 4.6,
+        "wall_total": 9
+      },
+      "features": {
+        "openness": 1,
+        "choke": 0,
+        "flank": 1,
+        "bush_position": 2
+      }
+    }
+  ],
+  "KnockOut": [
+    {
+      "name": "Belle'sRock",
+      "id": 15000368,
+      "mode": "KnockOut",
+      "terrain": {
+        "bush": 6,
+        "wall_soft": 13,
+        "wall_hard": 1.4,
+        "water": 0,
+        "wall_total": 14.4
+      },
+      "features": {
+        "openness": 1,
+        "choke": 1,
+        "flank": 0,
+        "bush_position": 0
+      }
+    },
+    {
+      "name": "FlaringPhoenix",
+      "id": 15000440,
+      "mode": "KnockOut",
+      "terrain": {
+        "bush": 16.2,
+        "wall_soft": 9.5,
+        "wall_hard": 0.8,
+        "water": 0,
+        "wall_total": 10.3
+      },
+      "features": {
+        "openness": 0,
+        "choke": 0,
+        "flank": 2,
+        "bush_position": 2
+      }
+    },
+    {
+      "name": "NewHorizons",
+      "id": 15000703,
+      "mode": "KnockOut",
+      "terrain": {
+        "bush": 7.6,
+        "wall_soft": 8.6,
+        "wall_hard": 0,
+        "water": 5.1,
+        "wall_total": 8.6
+      },
+      "features": {
+        "openness": 1,
+        "choke": 0,
+        "flank": 0,
+        "bush_position": 0
+      }
+    },
+    {
+      "name": "OutintheOpen",
+      "id": 15000548,
+      "mode": "KnockOut",
+      "terrain": {
+        "bush": 11.2,
+        "wall_soft": 4,
+        "wall_hard": 2.6,
+        "water": 2.3,
+        "wall_total": 6.6
+      },
+      "features": {
+        "openness": 2,
+        "choke": 0,
+        "flank": 0,
+        "bush_position": 1
+      }
+    }
+  ],
+  "BrawlBall": [
+    {
+      "name": "BeachBall",
+      "id": 15000710,
+      "mode": "BrawlBall",
+      "terrain": {
+        "bush": 11.8,
+        "wall_soft": 9.5,
+        "wall_hard": 0,
+        "water": 0,
+        "wall_total": 9.5
+      },
+      "features": {
+        "openness": 1,
+        "choke": 1,
+        "flank": 1,
+        "bush_position": 1
+      }
+    },
+    {
+      "name": "CenterStage",
+      "id": 15000132,
+      "mode": "BrawlBall",
+      "terrain": {
+        "bush": 21.4,
+        "wall_soft": 8.6,
+        "wall_hard": 0,
+        "water": 0,
+        "wall_total": 8.6
+      },
+      "features": {
+        "openness": 0,
+        "choke": 2,
+        "flank": 2,
+        "bush_position": 2
+      }
+    },
+    {
+      "name": "PinballDreams",
+      "id": 15000118,
+      "mode": "BrawlBall",
+      "terrain": {
+        "bush": 14.3,
+        "wall_soft": 9.3,
+        "wall_hard": 0,
+        "water": 0,
+        "wall_total": 9.3
+      },
+      "features": {
+        "openness": 1,
+        "choke": 2,
+        "flank": 1,
+        "bush_position": 2
+      }
+    },
+    {
+      "name": "SneakyFields",
+      "id": 15000050,
+      "mode": "BrawlBall",
+      "terrain": {
+        "bush": 16.5,
+        "wall_soft": 11.7,
+        "wall_hard": 0,
+        "water": 0,
+        "wall_total": 11.7
+      },
+      "features": {
+        "openness": 0,
+        "choke": 2,
+        "flank": 1,
+        "bush_position": 2
+      }
+    },
+    {
+      "name": "SpiralingOut",
+      "id": 15001021,
+      "mode": "BrawlBall",
+      "terrain": {
+        "bush": 5.2,
+        "wall_soft": 7.4,
+        "wall_hard": 0,
+        "water": 0,
+        "wall_total": 7.4
+      },
+      "features": {
+        "openness": 1,
+        "choke": 1,
+        "flank": 1,
+        "bush_position": 1
+      }
+    },
+    {
+      "name": "TripleDribble",
+      "id": 15000025,
+      "mode": "BrawlBall",
+      "terrain": {
+        "bush": 3.4,
+        "wall_soft": 12.7,
+        "wall_hard": 0,
+        "water": 0,
+        "wall_total": 12.7
+      },
+      "features": {
+        "openness": 1,
+        "choke": 2,
+        "flank": 0,
+        "bush_position": 0
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@ export const BrawlerCard = ({ brawler }) => {
                 return "Assassin";
             case "controller":
                 return "Controller";
-            case "Marksman":
+            case "marksman":
                 return "Marksman";
             case "artillery":
                 return "Artillery";
