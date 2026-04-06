@@ -60,13 +60,12 @@
     font-size: 20px;
     letter-spacing: 1px;
     color: var(--accent-orange);
+    text-transform: uppercase;
 }
 
-.map-tags {
-    font-size: 14px;
-    color: var(--text-muted);
-    font-style: italic;
-    margin-bottom: 8px;
+.game-mode {
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .Map-analysis p {
@@ -75,4 +74,11 @@
     display: flex;
     align-items: center;
     gap: 6px;
+}
+
+.feature-gauge {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
 }

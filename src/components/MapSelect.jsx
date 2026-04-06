@@ -3,9 +3,11 @@ import mapData from '../data/mapData.json';
 import { useFetchMaps } from '../hooks/useFetchMaps.js';
 import { useState } from 'react';
 import { classifyMap } from '../util/mapTagger.js';
+import { TerrainBar } from "./TerrainBar.jsx";
+import { FeatureGauge } from "./FeatureGauge.jsx";
 
 const MODES = [
-    { value: "GemGrab", strategy: "Gem Grab" },
+    { value: "GemGrab", strategy: "Close-Quarters" },
     { value: "Heist", strategy: "Heist" },
     { value: "BrawlBall", strategy: "Brawl Ball" },
     { value: "Bounty", strategy: "Bounty" },
@@ -53,11 +55,21 @@ export const MapSelect = ({ selectedMode, onMapChange, selectedMap }) => {
             {selectedMap &&
                 <div className="Map-analysis">
                     <h3>Map Analysis of "{`${selectedMap.name}`}"</h3>
-                    <div className="map-tags"> {selectedTags && Object.keys(selectedTags).map(tag => "#" + `${tag}` + " ")} </div>
-                    <p> 🎮 Game Mode : {selectedMap.mode} ⇨ {MODES.find(m => m.value === selectedMap.mode)?.strategy}</p>
-                    <p> 🌱 Bush Coverage: {(selectedMap.terrain.bush)}%</p>
-                    <p> 🪨 Wall Coverage: {(selectedMap.terrain.wall_total)}% </p>
-                    <p> 💧 Water Coverage: {(selectedMap.terrain.water)}%</p>
+                    <div className="card-divider" />
+                    <p className="game-mode"> 🎮 Game Mode : {selectedMap.mode} ⇨ {MODES.find(m => m.value === selectedMap.mode)?.strategy}</p>
+                    <p> Terrain </p>
+                    <div className="terrain-bar">
+                        <TerrainBar label="🌱 Bush Coverage" value={(selectedMap.terrain.bush)} color="green" />
+                        <TerrainBar label="🪨 Wall Coverage" value={(selectedMap.terrain.wall_total)} color="gray" />
+                        <TerrainBar label="💧 Water Coverage" value={(selectedMap.terrain.water)} color="skyblue" />
+                    </div>
+                    <p> Features </p>
+                    <div className="feature-gauge">
+                        <FeatureGauge label="🔓 Openness" value={selectedMap.features.openness} />
+                        <FeatureGauge label="🚧 Choke" value={selectedMap.features.choke} />
+                        <FeatureGauge label="🏃 Flank" value={selectedMap.features.flank} />
+                        <FeatureGauge label="🌿 Bush Position" value={selectedMap.features.bush_position} />
+                    </div>
                 </div>
             }
         </div>
