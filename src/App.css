@@ -1,3 +1,26 @@
+.header {
+    margin-bottom: 32px;
+}
+
 h1 {
-    letter-spacing: 2px;
+  display: inline-block;
+  font-size: 52px;
+  letter-spacing: 3px;
+  background: linear-gradient(135deg, #ffffff 0%, #ffcb77 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.card-divider {
+    height: 1px;
+    background: var(--border-default);
 }

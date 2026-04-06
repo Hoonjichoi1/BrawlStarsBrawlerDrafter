@@ -29,6 +29,8 @@
 .mode-button:hover {
     border-color: var(--accent-orange);
     color: var(--accent-orange);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-glow-orange);
 }
 
 .mode-button.active {

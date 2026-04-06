@@ -30,7 +30,11 @@ function App() {
 
     return (
         <>
-            <h1>Brawl Picker</h1>
+            <div className='header'>
+                <h1 className='title'>Brawl Picker</h1>
+                <p className='subtitle'>Brawler Recommendation by Map & Brawler features</p>
+                 <div className="card-divider" />
+            </div>
             <ModeSelector
                 onModeChange={onModeChange}
                 selectedMode={selectedMode} />

@@ -46,14 +46,14 @@ export const MapSelect = ({ selectedMode, onMapChange, selectedMap }) => {
                             onClick={() => handleMapSelect(item.id)}
                             src={item.imageUrl}
                             alt={item.name} />
-                        <div className="map-name"> {item.name} </div>
+                        <div className={`map-name ${selected === item.id ? "selected" : ""}`}> {item.name} </div>
                     </div>
                 ))}
             </div>
             {selectedMap &&
                 <div className="Map-analysis">
-                    <h3>Map analysis of "{`${selectedMap.name}`}"</h3>
-                    <div className="map-tags"> {selectedTags && Object.values(selectedTags).map(tag => "#" + `${tag}` + " ")} </div>
+                    <h3>Map Analysis of "{`${selectedMap.name}`}"</h3>
+                    <div className="map-tags"> {selectedTags && Object.keys(selectedTags).map(tag => "#" + `${tag}` + " ")} </div>
                     <p> 🎮 Game Mode : {selectedMap.mode} ⇨ {MODES.find(m => m.value === selectedMap.mode)?.strategy}</p>
                     <p> 🌱 Bush Coverage: {(selectedMap.terrain.bush)}%</p>
                     <p> 🪨 Wall Coverage: {(selectedMap.terrain.wall_total)}% </p>

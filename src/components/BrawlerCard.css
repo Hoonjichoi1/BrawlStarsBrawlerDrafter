@@ -1,5 +1,6 @@
 .BrawlerCard {
     width: 100%;
+    min-height: 380px;
     background: var(--bg-card);
     border: 1.5px solid var(--border-default);
     border-radius: 10px;
@@ -10,7 +11,31 @@
     gap: 8px;
 }
 
-.BrawlerCard img {
+.BrawlerCard:hover {
+    transform: translateY(-3px);
+    border-color: var(--border-bright);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+}
+
+.BrawlerCard:hover img {
+    transform: scale(1.05);
+}
+
+.BrawlerCard:hover .rank-badge {
+    transform: scale(0.01);
+}
+
+.brawler-image-area {
+    position: relative;
+    background: linear-gradient(160deg, #0f1923 0%, #1a2535 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 12px 8px;
+    overflow: hidden;
+}
+
+.BrawlerCard .brawler-image-area img {
     width: 100%;
     max-height: 130px;
     max-width: fit-content;
@@ -18,29 +43,96 @@
     border-radius: 8px;
 }
 
-.brawler-name {
+.brawler-image-area .rank-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--accent-orange);
+    color: #0a0e1a;
     font-size: 18px;
+    letter-spacing: 1px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+
+.brawler-body {
+    padding: 10px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.brawler-body .brawler-info-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+.brawler-body .brawler-info-top .brawler-name {
+    font-size: 20px;
     color: var(--text-primary);
-    font-weight: 600;
-    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.brawler-body .brawler-info-top .brawler-type {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 700;
+}
+
+.card-divider {
+    height: 1px;
+    background: var(--border-default);
 }
 
 .brawler-stat {
-    font-size: 15px;
-    color: var(--text-primary);
-    font-weight: 100;
-    text-align: left;
-    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
 }
 
-.brawler-stat .brawler-range.long {
-    color: #f87171;
+.brawler-stat .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    padding: 6px 4px;
 }
 
-.brawler-stat .brawler-range.medium {
-    color: var(--accent-orange);
+.brawler-stat .stat .stat-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
 }
 
-.brawler-stat .brawler-range.short {
-    color: var(--accent-green);
+.brawler-stat .stat .stat-value.brawler-range.long { color: var(--accent-red);}
+.brawler-stat .stat .stat-value.brawler-range.medium { color: var(--accent-orange); }
+.brawler-stat .stat .stat-value.brawler-range.short { color: var(--accent-green); }
+
+.brawler-breakdown {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brawler-breakdown .reason {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(77, 166, 255, 0.2);
+    color: var(--accent-blue);
+    border-radius: 20px;
+    padding: 3px 10px;
+    line-height: 1.4;
+    white-space: nowrap;
+    background: rgba(77, 166, 255, 0.08);
 }

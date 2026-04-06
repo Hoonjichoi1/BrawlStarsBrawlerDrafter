@@ -6,6 +6,10 @@ export const BrawlerList = ({ recommendedBrawler }) => {
     const apiBrawlers = useFetchBrawlers();
     const validIds = recommendedBrawler.map(b => b.id);
     const filteredBrawlers = Object.values(apiBrawlers).filter((b) => validIds.includes(b.id));
+    const taggedBrawlers = filteredBrawlers.map(b => {
+        const recommended = recommendedBrawler.find(r => r.id === b.id);
+        return { ...b, _breakdown: recommended?._breakdown };
+    })
 
     return (
         <div>
@@ -13,8 +17,8 @@ export const BrawlerList = ({ recommendedBrawler }) => {
                 <div className="BrawlerList">
                     <p className="instruction">RECOMMENDED BRAWLERS</p>
                     <div className="brawler-cards">
-                        {filteredBrawlers.map((brawler) =>
-                            <BrawlerCard key={brawler.id} brawler={brawler} />
+                        {taggedBrawlers.map((brawler, i) =>
+                            <BrawlerCard key={brawler.id} brawler={brawler} rank={i + 1} />
                         )}
                     </div>
                 </div>

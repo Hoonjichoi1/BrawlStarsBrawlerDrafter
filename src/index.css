@@ -1,24 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Nunito:wght@400;600;700&display=swap');
 
 :root {
-  --bg-primary: #0d1117;
-  --bg-card: #1a2030;
-  --border-default: #2a3347;
-  --accent-green: #4ade80;
-  --accent-green-bg: #1e2a1a;
-  --accent-orange: #f5a623;
-  --text-primary: #c9d1e0;
-  --text-muted: #6b7280;
-  --text-secondary: #8b9cb8;
-  --font-title: 'Boogaloo', sans-serif;
-  --font-body: 'Nunito', sans-serif;
+    --bg-primary: #0d1117;
+    --bg-card: #1a2030;
+    --border-default: #2a3347;
+    --accent-green: #4ade80;
+    --accent-green-dim: #17a854;
+    --accent-green-bg: #1e2a1a;
+    --accent-orange: #f5a623;
+    --accent-blue: #4da6ff;
+    --accent-red: #ff5252;
+    --text-primary: #c9d1e0;
+    --text-muted: #6b7280;
+    --text-secondary: #8b9cb8;
+    --font-title: 'Boogaloo', sans-serif;
+    --font-body: 'Nunito', sans-serif;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
-  background: var(--bg-primary);
-  font-family: var(--font-body);
-  color: var(--text-primary);
-  padding: 24px;
+    background: var(--bg-primary);
+    font-family: var(--font-body);
+    color: var(--text-primary);
+    padding: 24px;
+    max-width: 1440px;
+    margin: 0 auto;
 }

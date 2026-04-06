@@ -1,7 +1,7 @@
 {
   "GemGrab": [
     {
-      "name": "DoubleSwoosh",
+      "name": "Double Swoosh",
       "id": 15000115,
       "mode": "GemGrab",
       "terrain": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "name": "HardRockMine",
+      "name": "Hard Rock Mine",
       "id": 15000007,
       "mode": "GemGrab",
       "terrain": {
@@ -37,7 +37,7 @@
       }
     },
     {
-      "name": "GemFort",
+      "name": "Gem Fort",
       "id": 15000010,
       "mode": "GemGrab",
       "terrain": {
@@ -75,7 +75,7 @@
   ],
   "Heist": [
     {
-      "name": "BridgeTooFar",
+      "name": "Bridge Too Far",
       "id": 15000072,
       "mode": "Heist",
       "terrain": {
@@ -93,7 +93,7 @@
       }
     },
     {
-      "name": "HotPotato",
+      "name": "Hot Potato",
       "id": 15000053,
       "mode": "Heist",
       "terrain": {
@@ -111,7 +111,7 @@
       }
     },
     {
-      "name": "KaboomCanyon",
+      "name": "Kaboo Canyon",
       "id": 15000018,
       "mode": "Heist",
       "terrain": {
@@ -122,14 +122,14 @@
         "wall_total": 9.8
       },
       "features": {
-        "openness": 1,
+        "openness": 2,
         "choke": 2,
         "flank": 0,
         "bush_position": 2
       }
     },
     {
-      "name": "SafeZone",
+      "name": "Safe Zone",
       "id": 15000019,
       "mode": "Heist",
       "terrain": {
@@ -149,7 +149,7 @@
   ],
   "Bounty": [
     {
-      "name": "DrySeason",
+      "name": "Dry Season",
       "id": 15000083,
       "mode": "Bounty",
       "terrain": {
@@ -186,7 +186,7 @@
       }
     },
     {
-      "name": "LayerCake",
+      "name": "Layer Cake",
       "id": 15000082,
       "mode": "Bounty",
       "terrain": {
@@ -204,7 +204,7 @@
       }
     },
     {
-      "name": "ShootingStar",
+      "name": "Shooting Star",
       "id": 15000005,
       "mode": "Bounty",
       "terrain": {
@@ -224,7 +224,7 @@
   ],
   "HotZone": [
     {
-      "name": "DuelingBeetles",
+      "name": "Dueling Beetles",
       "id": 15000306,
       "mode": "HotZone",
       "terrain": {
@@ -242,7 +242,7 @@
       }
     },
     {
-      "name": "OpenBusiness",
+      "name": "Open Business",
       "id": 15000292,
       "mode": "HotZone",
       "terrain": {
@@ -260,7 +260,7 @@
       }
     },
     {
-      "name": "ParallelPlays",
+      "name": "Parallel Plays",
       "id": 15000293,
       "mode": "HotZone",
       "terrain": {
@@ -278,7 +278,7 @@
       }
     },
     {
-      "name": "RingofFire",
+      "name": "Ring of Fire",
       "id": 15000300,
       "mode": "HotZone",
       "terrain": {
@@ -298,7 +298,7 @@
   ],
   "KnockOut": [
     {
-      "name": "Belle'sRock",
+      "name": "Belle's Rock",
       "id": 15000368,
       "mode": "KnockOut",
       "terrain": {
@@ -316,7 +316,7 @@
       }
     },
     {
-      "name": "FlaringPhoenix",
+      "name": "Flaring Phoenix",
       "id": 15000440,
       "mode": "KnockOut",
       "terrain": {
@@ -334,7 +334,7 @@
       }
     },
     {
-      "name": "NewHorizons",
+      "name": "New Horizons",
       "id": 15000703,
       "mode": "KnockOut",
       "terrain": {
@@ -352,7 +352,7 @@
       }
     },
     {
-      "name": "OutintheOpen",
+      "name": "Out intheOpen",
       "id": 15000548,
       "mode": "KnockOut",
       "terrain": {
@@ -372,7 +372,7 @@
   ],
   "BrawlBall": [
     {
-      "name": "BeachBall",
+      "name": "Beach Ball",
       "id": 15000710,
       "mode": "BrawlBall",
       "terrain": {
@@ -390,7 +390,7 @@
       }
     },
     {
-      "name": "CenterStage",
+      "name": "Center Stage",
       "id": 15000132,
       "mode": "BrawlBall",
       "terrain": {
@@ -408,7 +408,7 @@
       }
     },
     {
-      "name": "PinballDreams",
+      "name": "Pinball Dreams",
       "id": 15000118,
       "mode": "BrawlBall",
       "terrain": {
@@ -426,7 +426,7 @@
       }
     },
     {
-      "name": "SneakyFields",
+      "name": "Sneaky Fields",
       "id": 15000050,
       "mode": "BrawlBall",
       "terrain": {
@@ -444,7 +444,7 @@
       }
     },
     {
-      "name": "SpiralingOut",
+      "name": "Spiraling Out",
       "id": 15001021,
       "mode": "BrawlBall",
       "terrain": {
@@ -462,7 +462,7 @@
       }
     },
     {
-      "name": "TripleDribble",
+      "name": "Triple Dribble",
       "id": 15000025,
       "mode": "BrawlBall",
       "terrain": {
